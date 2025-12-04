@@ -4479,3 +4479,86 @@ button:focus-visible {
         padding: 0 var(--space-lg) var(--space-md);
     }
 }
+
+/* ================================
+   Testimonial Detail Cards
+   セラピストコース用の詳細な受講生の声
+   ================================ */
+.testimonials-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-xl);
+}
+
+.testimonial-detail-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.testimonial-detail-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.testimonial-detail-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.testimonial-detail-avatar svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--color-white);
+}
+
+.testimonial-detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.testimonial-detail-location {
+    font-weight: 600;
+    color: var(--color-gray-800);
+}
+
+.testimonial-detail-type {
+    font-size: 0.85rem;
+    color: var(--color-primary);
+    background: rgba(225, 119, 119, 0.1);
+    padding: 2px 10px;
+    border-radius: var(--radius-full);
+    width: fit-content;
+}
+
+.testimonial-detail-text {
+    color: var(--color-gray-600);
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+}
+
+.testimonial-detail-text:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .testimonials-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-detail-card {
+        padding: var(--space-lg);
+    }
+}
