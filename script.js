@@ -43,19 +43,20 @@ function initHeroSlider() {
  */
 function initLoader() {
     const loader = document.getElementById('loader');
+    if (!loader) return;
 
     window.addEventListener('load', () => {
         setTimeout(() => {
             loader.classList.add('hidden');
             document.body.classList.remove('loading');
-        }, 1500);
+        }, 300);
     });
 
-    // フォールバック: 3秒後に強制的に非表示
+    // フォールバック: 1秒後に強制的に非表示
     setTimeout(() => {
         loader.classList.add('hidden');
         document.body.classList.remove('loading');
-    }, 3000);
+    }, 1000);
 }
 
 /**
@@ -511,6 +512,22 @@ window.addEventListener('resize', debounce(() => {
 window.addEventListener('beforeunload', () => {
     document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.3s ease';
+});
+
+/**
+ * ブラウザバック時のopacity復元（bfcache対策）
+ */
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        // bfcacheから復元された場合
+        document.body.style.opacity = '1';
+        document.body.style.transition = '';
+        const loader = document.getElementById('loader');
+        if (loader) {
+            loader.classList.add('hidden');
+            document.body.classList.remove('loading');
+        }
+    }
 });
 
 /**
