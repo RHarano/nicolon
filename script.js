@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initGalleryFilter();
     initContactParticles();
     initBackToTop();
+    initFAQ();
 });
 
 /**
@@ -551,6 +552,30 @@ function initBackToTop() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
+        });
+    });
+}
+
+/**
+ * FAQアコーディオン
+ */
+function initFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    if (faqItems.length === 0) return;
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+
+        question.addEventListener('click', () => {
+            // 他のアイテムを閉じる
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+
+            // クリックしたアイテムをトグル
+            item.classList.toggle('active');
         });
     });
 }

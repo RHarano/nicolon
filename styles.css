@@ -4371,3 +4371,111 @@ button:focus-visible {
         grid-template-columns: 1fr;
     }
 }
+
+/* ================================
+   FAQ Section
+   ================================ */
+.faq-section {
+    background: var(--color-gray-50);
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.faq-item {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: box-shadow var(--transition-normal);
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-lg) var(--space-xl);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-gray-800);
+    transition: background var(--transition-normal);
+}
+
+.faq-question:hover {
+    background: var(--color-gray-50);
+}
+
+.faq-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-left: var(--space-md);
+}
+
+.faq-icon::before,
+.faq-icon::after {
+    content: '';
+    position: absolute;
+    background: var(--color-primary);
+    transition: transform var(--transition-normal);
+}
+
+.faq-icon::before {
+    width: 2px;
+    height: 16px;
+    top: 4px;
+    left: 11px;
+}
+
+.faq-icon::after {
+    width: 16px;
+    height: 2px;
+    top: 11px;
+    left: 4px;
+}
+
+.faq-item.active .faq-icon::before {
+    transform: rotate(90deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.faq-answer p {
+    padding: 0 var(--space-xl) var(--space-lg);
+    color: var(--color-gray-600);
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .faq-question {
+        padding: var(--space-md) var(--space-lg);
+        font-size: 0.95rem;
+    }
+
+    .faq-answer p {
+        padding: 0 var(--space-lg) var(--space-md);
+    }
+}
