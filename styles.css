@@ -4228,6 +4228,37 @@ button:focus-visible {
     flex-wrap: wrap;
 }
 
+/* レッスン情報ボックス */
+.lesson-info-box {
+    background: linear-gradient(135deg, #fff5f5 0%, #fff0f5 50%, #f0f5ff 100%);
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 2rem 0;
+    border-left: 4px solid;
+    border-image: linear-gradient(180deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF, #9B59B6) 1;
+}
+
+.lesson-info-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+.lesson-info-box li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+
+.lesson-info-box li:last-child {
+    border-bottom: none;
+}
+
+.lesson-info-box .note {
+    font-size: 0.875rem;
+    color: var(--color-gray-500);
+    margin: 0;
+}
+
 /* 著者情報 */
 .blog-author {
     display: flex;
