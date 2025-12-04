@@ -2292,7 +2292,8 @@ button:focus-visible {
 
 .course-card-image.rainbow-image img {
     object-fit: contain;
-    padding: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .course-badge {
