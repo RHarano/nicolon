@@ -4241,6 +4241,90 @@ button:focus-visible {
     flex-wrap: wrap;
 }
 
+/* 記事内画像（キャプション付き） */
+.blog-post-body figure {
+    margin: 2rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-body figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-post-body figcaption {
+    padding: 1rem 1.5rem;
+    background: var(--color-gray-50);
+    font-size: 0.9rem;
+    color: var(--color-gray-600);
+    text-align: center;
+    border-top: 1px solid var(--color-gray-200);
+}
+
+/* フォトギャラリー */
+.blog-photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.blog-photo-gallery figure {
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-photo-gallery figure:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-photo-gallery figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-photo-gallery figcaption {
+    padding: 0.75rem 1rem;
+    background: var(--color-gray-50);
+    font-size: 0.85rem;
+    color: var(--color-gray-600);
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .blog-photo-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-photo-gallery figure img {
+        height: 180px;
+    }
+}
+
+/* ハイライトボックス */
+.blog-highlight-box {
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-off-white) 100%);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    border-left: 4px solid var(--color-primary);
+}
+
+.blog-highlight-box p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
 /* レッスン情報ボックス */
 .lesson-info-box {
     background: linear-gradient(135deg, #fff5f5 0%, #fff0f5 50%, #f0f5ff 100%);
