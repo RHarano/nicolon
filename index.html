@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO対策 -->
+    <title>nicolon | サンドアート体験・ワークショップ | イロトリドリの砂で癒しの時間</title>
+    <meta name="description" content="福岡発・全国対応のサンドアート体験ワークショップ。3歳から大人まで楽しめる色とりどりの砂で作るアート体験。5年間で約10,000名が参加。企業イベント・福祉施設・ショッピングモールなど出張対応可能。">
+    <meta name="keywords" content="サンドアート,ワークショップ,体験,福岡,イベント,砂アート,ハンドメイド,癒し,親子体験,企業イベント,アーティストコース,セラピストコース">
+    <meta name="author" content="nicolon - 日本サンドアート協会">
+
+    <!-- OGP（SNSシェア対策） -->
+    <meta property="og:title" content="nicolon | サンドアート体験・ワークショップ">
+    <meta property="og:description" content="イロトリドリの砂で自分時間を充実させて癒されてみませんか？3歳から大人まで楽しめるサンドアート体験。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nicosand.com/">
+    <meta property="og:image" content="https://nicosand.com/img/IMG_1824.JPG">
+    <meta property="og:site_name" content="nicolon サンドアート">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="nicolon | サンドアート体験・ワークショップ">
+    <meta name="twitter:description" content="イロトリドリの砂で自分時間を充実させて癒されてみませんか？">
+
+    <!-- 構造化データ（JSON-LD） -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "nicolon サンドアート",
+        "description": "サンドアート体験・ワークショップを提供する日本サンドアート協会",
+        "url": "https://nicosand.com",
+        "email": "nicolon@nicosand.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "福岡県",
+            "addressCountry": "JP"
+        },
+        "priceRange": "¥2,000〜",
+        "openingHours": "Mo-Su 09:00-18:00",
+        "sameAs": [
+            "https://www.instagram.com/nicolon_sandart/"
+        ]
+    }
+    </script>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nicosand.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ローディングアニメーション -->
+    <div class="loader" id="loader">
+        <div class="sand-particles">
+            <span style="--i:1; --color: #FF6B9D;"></span>
+            <span style="--i:2; --color: #FFB347;"></span>
+            <span style="--i:3; --color: #87CEEB;"></span>
+            <span style="--i:4; --color: #98D8AA;"></span>
+            <span style="--i:5; --color: #DDA0DD;"></span>
+            <span style="--i:6; --color: #F0E68C;"></span>
+            <span style="--i:7; --color: #FF6B9D;"></span>
+            <span style="--i:8; --color: #87CEEB;"></span>
+        </div>
+        <p class="loader-text">Loading...</p>
+    </div>
+
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="nicolon sand art" class="logo-img">
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">HOME</a></li>
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="#workshop" class="nav-link">WORKSHOP</a></li>
+                    <li><a href="#course" class="nav-link">COURSE</a></li>
+                    <li><a href="#gallery" class="nav-link">GALLERY</a></li>
+                    <li><a href="order.html" class="nav-link">ORDER</a></li>
+                    <li><a href="#contact" class="nav-link nav-link-cta">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-image-slider">
+                <div class="hero-slide active" style="background-image: url('img/IMG_1824.JPG');"></div>
+                <div class="hero-slide" style="background-image: url('img/IMG_8367 2.JPG');"></div>
+                <div class="hero-slide" style="background-image: url('img/IMG_2531 2.JPG');"></div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="floating-particles" id="particles"></div>
+
+        <div class="hero-content">
+            <p class="hero-subtitle animate-fade-up">Sand Art Experience</p>
+            <h1 class="hero-title animate-fade-up delay-1">
+                <span class="gradient-text">イロトリドリ</span>の砂で<br>
+                癒しのひとときを
+            </h1>
+            <p class="hero-description animate-fade-up delay-2">
+                色彩感覚を極める！サンドアート体験<br>
+                3歳から大人まで、誰でも楽しめるアート体験
+            </p>
+            <div class="hero-stats animate-fade-up delay-3">
+                <div class="stat">
+                    <span class="stat-number" data-target="10000">0</span>
+                    <span class="stat-unit">名+</span>
+                    <span class="stat-label">参加実績</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-unit">年</span>
+                    <span class="stat-label">の経験</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="47">0</span>
+                    <span class="stat-unit">都道府県</span>
+                    <span class="stat-label">全国対応</span>
+                </div>
+            </div>
+            <div class="hero-cta animate-fade-up delay-4">
+                <a href="#workshop" class="btn btn-primary">
+                    <span>ワークショップを見る</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUTセクション -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label animate-slide-in">About Us</span>
+                <h2 class="section-title animate-slide-in delay-1">
+                    できないが<span class="highlight">できた</span>に<br>
+                    変わる感動を
+                </h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text animate-slide-in delay-2">
+                    <p class="lead">
+                        nicolonは、色とりどりの砂を使って世界に一つだけの作品を作る
+                        サンドアート体験を提供しています。
+                    </p>
+                    <p>
+                        初めての方でも安心。丁寧にサポートしながら、
+                        あなただけのオリジナル作品を完成させることができます。
+                        砂の流れを見つめる時間は、日常から離れた癒しのひととき。
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>30分〜60分</h4>
+                                <p>短時間で完成</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>3歳〜大人</h4>
+                                <p>どなたでもOK</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>全国対応</h4>
+                                <p>出張ワークショップ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual animate-slide-in delay-3">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-bg"></div>
+                        <img src="img/IMG_9593.JPG" alt="サンドアート制作の様子" class="about-image" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ワークショップセクション -->
+    <section class="section workshop" id="workshop">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label animate-slide-in">Workshop</span>
+                <h2 class="section-title animate-slide-in delay-1">
+                    ワークショップ・<span class="highlight">イベント出張</span>
+                </h2>
+                <p class="online-badge animate-slide-in delay-2">
+                    <span class="badge-icon">💻</span>
+                    <span class="badge-text">オンライン開催も可能！</span>
+                </p>
+                <p class="section-description animate-slide-in delay-2">
+                    企業イベント、福祉施設、ショッピングモール、学校行事など<br>
+                    様々なシーンでサンドアート体験をお届けします
+                </p>
+            </div>
+
+            <div class="workshop-cards four-columns">
+                <article class="workshop-card animate-card" style="--delay: 0;">
+                    <div class="card-image">
+                        <img src="img/IMG_9748.JPG" alt="ハウスメーカー・住宅展示場" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">ハウスメーカー・住宅展示場</h3>
+                        <p class="card-description">
+                            住宅展示場での集客イベントに最適。ファミリー層に大人気のコンテンツです。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="workshop-card animate-card" style="--delay: 1;">
+                    <div class="card-image">
+                        <img src="img/IMG_3622.JPG" alt="ショッピングモール" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">ショッピングモール</h3>
+                        <p class="card-description">
+                            週末のファミリーイベントや、季節の催事にぴったり。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="workshop-card animate-card" style="--delay: 2;">
+                    <div class="card-image">
+                        <img src="img/IMG_5617.jpg" alt="企業イベント・福利厚生" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">企業イベント・福利厚生</h3>
+                        <p class="card-description">
+                            社員研修やチームビルディング、ファミリーデーにも。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="workshop-card animate-card" style="--delay: 3;">
+                    <div class="card-image">
+                        <img src="img/IMG_5353.JPG" alt="福祉施設・介護施設" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">福祉施設・介護施設</h3>
+                        <p class="card-description">
+                            高齢者の方にも楽しんでいただける、優しいアート体験。
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="workshop-details animate-fade-up cute-design">
+                <div class="details-header-cute">
+                    <div class="details-icon">✨</div>
+                    <h3 class="details-title-cute">イベント詳細</h3>
+                    <div class="details-style-tags">
+                        <span class="style-tag online">🖥️ オンライン</span>
+                        <span class="style-tag inperson">🤝 対面</span>
+                    </div>
+                    <p class="details-subtitle">どちらも対応可能です！</p>
+                </div>
+                <div class="details-grid cute">
+                    <div class="details-item">
+                        <span class="details-label">対応規模</span>
+                        <span class="details-value">20名/日〜150名/日</span>
+                        <span class="details-note">それ以下・それ以上の場合もご相談ください</span>
+                    </div>
+                    <div class="details-item">
+                        <span class="details-label">対象</span>
+                        <span class="details-value">3歳から大人まで</span>
+                    </div>
+                    <div class="details-item">
+                        <span class="details-label">対応地域</span>
+                        <span class="details-value">全国対応</span>
+                    </div>
+                    <div class="details-item">
+                        <span class="details-label">イベントスタイル</span>
+                        <span class="details-value">オンライン・対面</span>
+                        <span class="details-note">社内・社外イベント対応</span>
+                    </div>
+                    <div class="details-item">
+                        <span class="details-label">料金</span>
+                        <span class="details-value">材料費 ¥2,000/人〜</span>
+                        <span class="details-note">人数に応じて割引あり<br>交通費・講師代についてはご相談に応じております</span>
+                    </div>
+                    <div class="details-item">
+                        <span class="details-label">所要時間</span>
+                        <span class="details-value">約30分〜60分</span>
+                        <span class="details-note">御社のタイムスケジュールに合わせます</span>
+                    </div>
+                </div>
+
+                <div class="schedule-options">
+                    <h4 class="schedule-title">選べるタイムスケジュール</h4>
+                    <div class="schedule-grid">
+                        <div class="schedule-item">
+                            <span class="schedule-type">①1日1回</span>
+                            <span class="schedule-example">（例）10:00〜11:30</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-type">②1日複数回</span>
+                            <span class="schedule-example">（例）<br>・10:00〜11:30<br>・12:00〜13:30<br>・15:00〜16:30</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-type">③随時受入</span>
+                            <span class="schedule-example">（例）10:00〜17:00<br><small>※定員に達した際には終了</small></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements">
+                    <h4 class="achievements-title">実績</h4>
+                    <p class="achievements-list">ハウスメーカー / 福祉障害者施設 / 子供会 / 老人ホーム / 自動車メーカー / 国内通信事業者 / ショッピングモール / 社内レクリエーション など</p>
+                </div>
+
+                <a href="#contact" class="btn btn-primary">
+                    <span>お見積もり・ご相談</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- コースセクション -->
+    <section class="section course" id="course">
+        <div class="course-bg"></div>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label animate-slide-in">Course</span>
+                <h2 class="section-title animate-slide-in delay-1">
+                    <span class="highlight">技術習得</span>コース
+                </h2>
+                <p class="section-description animate-slide-in delay-2">
+                    趣味から講師デビューまで。<br>
+                    あなたのペースで学べるレッスンプログラム<br>
+                    <small>※対面またはオンラインで受講いただけます</small>
+                </p>
+            </div>
+
+            <div class="course-cards four-columns">
+                <article class="course-card animate-card" style="--delay: 0;">
+                    <div class="course-card-image">
+                        <img src="img/IMG_3580.jpg" alt="アーティストコース" loading="lazy">
+                        <div class="course-badge popular">人気No.1</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3 class="course-card-title">アーティストコース</h3>
+                        <p class="course-card-price">¥97,900<small>（税込）</small></p>
+                        <p class="course-card-description">
+                            文字入れ、デザイン、ニコちゃん制作、フラワーアレンジメント、
+                            SNS攻略、販売方法まで総合的に学べます。
+                        </p>
+                        <a href="artist.html" class="btn btn-primary btn-block">
+                            <span>詳細を見る</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="course-card animate-card" style="--delay: 1;">
+                    <div class="course-card-image">
+                        <img src="img/IMG_9467.jpg" alt="セラピストコース" loading="lazy">
+                        <div class="course-badge">イベントしたい方</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3 class="course-card-title">セラピストコース</h3>
+                        <p class="course-card-price">¥53,900<small>（税込）</small></p>
+                        <p class="course-card-description">
+                            ワークショップの開催方法、運営ノウハウを4時間で習得。
+                            すぐに講師として活動できます。
+                        </p>
+                        <a href="therapist.html" class="btn btn-outline btn-block">
+                            <span>詳細を見る</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="course-card animate-card" style="--delay: 2;">
+                    <div class="course-card-image">
+                        <img src="img/IMG_2531 2.JPG" alt="ベーシックコース" loading="lazy">
+                        <div class="course-badge basic">趣味にしたい方</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3 class="course-card-title">ベーシックコース</h3>
+                        <p class="course-card-price">¥31,900<small>（税込）</small></p>
+                        <p class="course-card-description">
+                            サンドアートの基礎やウェーブ模様、色彩学、梱包の方法等が学べます。
+                        </p>
+                        <p class="course-card-note">※販売・文字入れを習得したい方はアーティストコースをご受講ください</p>
+                        <a href="#contact" class="btn btn-outline btn-block">
+                            <span>お問い合わせ</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="course-card animate-card" style="--delay: 3;">
+                    <div class="course-card-image">
+                        <img src="img/IMG_1832.JPG" alt="スマイルコース" loading="lazy">
+                        <div class="course-badge smile">ニコちゃん好きな方</div>
+                    </div>
+                    <div class="course-card-content">
+                        <h3 class="course-card-title">スマイルコース</h3>
+                        <p class="course-card-price">¥42,900<small>（税込）</small></p>
+                        <p class="course-card-description">
+                            贈る側も贈られた側も自然と笑顔になれるスマイルマーク！文字入れ・フラワーアレンジ・梱包・発送方法が学べます。
+                        </p>
+                        <a href="#contact" class="btn btn-outline btn-block">
+                            <span>お問い合わせ</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="course-cta animate-fade-up">
+                <p>まずは無料体験から始めてみませんか？</p>
+                <a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener" class="btn btn-instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <span>Instagramをフォローで無料体験キット</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ギャラリーセクション -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label animate-slide-in">Gallery</span>
+                <h2 class="section-title animate-slide-in delay-1">
+                    <span class="highlight">作品</span>ギャラリー
+                </h2>
+                <p class="section-description animate-slide-in delay-2">
+                    季節やイベントに合わせた様々な作品をご紹介
+                </p>
+            </div>
+
+            <div class="gallery-filter animate-fade-up">
+                <button class="filter-btn active" data-filter="all">すべて</button>
+                <button class="filter-btn" data-filter="event">イベント</button>
+                <button class="filter-btn" data-filter="order">オーダー</button>
+            </div>
+
+            <div class="gallery-grid five-columns">
+                <!-- イベント写真 -->
+                <div class="gallery-item animate-gallery" data-category="event" style="--delay: 0;">
+                    <img src="img/0B409A6F-8B6B-4857-8848-BDD0DA8E8F8D.JPEG" alt="イベント" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="event" style="--delay: 1;">
+                    <img src="img/4935642240831038621.63a49a50d2be7ff747e0ba7fddc84053.23100807.JPG" alt="イベント" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="event" style="--delay: 2;">
+                    <img src="img/IMG_2125.jpg" alt="イベント" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="event" style="--delay: 3;">
+                    <img src="img/IMG_3623.JPG" alt="イベント" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="event" style="--delay: 4;">
+                    <img src="img/IMG_3624.JPG" alt="イベント" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="event" style="--delay: 5;">
+                    <img src="img/IMG_3929.jpg" alt="イベント" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="event" style="--delay: 6;">
+                    <img src="img/IMG_3935.jpg" alt="イベント" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="event" style="--delay: 7;">
+                    <img src="img/IMG_4197.jpg" alt="イベント" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="event" style="--delay: 8;">
+                    <img src="img/IMG_9441.jpg" alt="イベント" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="event" style="--delay: 9;">
+                    <img src="img/IMG_9454.jpg" alt="イベント" loading="lazy">
+                </div>
+                <!-- オーダー写真 -->
+                <div class="gallery-item animate-gallery" data-category="order" style="--delay: 10;">
+                    <img src="img/IMG_6136.jpg" alt="オーダー" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="order" style="--delay: 11;">
+                    <img src="img/IMG_5224.jpg" alt="オーダー" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="order" style="--delay: 12;">
+                    <img src="img/IMG_4614.jpg" alt="オーダー" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="order" style="--delay: 13;">
+                    <img src="img/IMG_4506.jpg" alt="オーダー" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="order" style="--delay: 14;">
+                    <img src="img/IMG_4498.jpg" alt="オーダー" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="order" style="--delay: 15;">
+                    <img src="img/IMG_4385.jpg" alt="オーダー" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="order" style="--delay: 16;">
+                    <img src="img/IMG_4142.jpg" alt="オーダー" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="order" style="--delay: 17;">
+                    <img src="img/IMG_4108.jpg" alt="オーダー" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="order" style="--delay: 18;">
+                    <img src="img/IMG_0160.jpg" alt="オーダー" loading="lazy">
+                </div>
+                <div class="gallery-item animate-gallery" data-category="order" style="--delay: 19;">
+                    <img src="img/IMG_2475.jpg" alt="オーダー" loading="lazy">
+                </div>
+            </div>
+
+            <div class="gallery-cta animate-fade-up">
+                <a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener" class="btn btn-outline">
+                    <span>Instagramでもっと見る</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- オーダーセクション -->
+    <section class="section order-section">
+        <div class="container">
+            <div class="order-banner animate-fade-up">
+                <div class="order-banner-content">
+                    <span class="section-label">Order Made</span>
+                    <h2 class="order-banner-title">オーダーメイド<span class="highlight">ギフト</span></h2>
+                    <p class="order-banner-description">
+                        大切な人への特別な贈り物に。<br>
+                        世界にひとつだけのサンドアートをお作りします。
+                    </p>
+                    <div class="order-banner-price">
+                        <span class="price-from">¥5,500</span>
+                        <span class="price-note">〜 サイズ・デザインにより変動</span>
+                    </div>
+                    <a href="order.html" class="btn btn-primary">
+                        <span>オーダー詳細を見る</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="order-banner-images">
+                    <img src="img/IMG_2547.jpg" alt="オーダーメイドサンドアート1" class="order-img order-img-1" loading="lazy">
+                    <img src="img/IMG_3113.jpg" alt="オーダーメイドサンドアート2" class="order-img order-img-2" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 講師紹介セクション -->
+    <section class="section instructor">
+        <div class="container">
+            <div class="instructor-content">
+                <div class="instructor-image animate-slide-in">
+                    <div class="instructor-image-wrapper">
+                        <img src="img/IMG_9770.png" alt="原野玲未" class="instructor-photo" loading="lazy">
+                        <div class="instructor-decoration"></div>
+                    </div>
+                </div>
+
+                <div class="instructor-info animate-slide-in delay-1">
+                    <span class="section-label">Instructor</span>
+                    <h2 class="instructor-name">原野 玲未<span class="name-reading">REMI HARANO</span></h2>
+                    <p class="instructor-title">日本サンドアート協会　認定講師</p>
+                    <p class="instructor-bio">
+                        福岡県在住、5児の母。Webエンジニアとしても活動しながら、
+                        サンドアートの魅力を全国に届けています。
+                    </p>
+                    <p class="instructor-bio">
+                        「誰でも簡単に、美しい作品が作れる」をモットーに、
+                        オンライン・対面の両方でレッスンを提供中。
+                    </p>
+                    <div class="instructor-social">
+                        <a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://line.me/R/ti/p/@485etec" target="_blank" rel="noopener" aria-label="LINE">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section class="section contact" id="contact">
+        <div class="contact-bg">
+            <div class="contact-particles" id="contact-particles"></div>
+        </div>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label animate-slide-in">Contact</span>
+                <h2 class="section-title animate-slide-in delay-1">
+                    お気軽に<span class="highlight">お問い合わせ</span>ください
+                </h2>
+                <p class="section-description animate-slide-in delay-2">
+                    ワークショップのご依頼・レッスンのご相談など<br>
+                    まずはお気軽にご連絡ください
+                </p>
+            </div>
+
+            <div class="contact-methods">
+                <a href="mailto:nicolon@nicosand.com" class="contact-card animate-card" style="--delay: 0;">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-title">メール</h3>
+                    <p class="contact-value">nicolon@nicosand.com</p>
+                </a>
+
+                <a href="https://line.me/R/ti/p/@485etec" target="_blank" rel="noopener" class="contact-card animate-card" style="--delay: 1;">
+                    <div class="contact-icon line">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-title">LINE</h3>
+                    <p class="contact-value">@485etec</p>
+                </a>
+
+                <a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener" class="contact-card animate-card" style="--delay: 2;">
+                    <div class="contact-icon instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-title">Instagram DM</h3>
+                    <p class="contact-value">@nicolon_sandart</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="img/logo-white.svg" alt="nicolon sand art" class="footer-logo-img">
+                    </a>
+                    <p class="footer-tagline">イロトリドリの砂で癒しのひとときを</p>
+                </div>
+
+                <nav class="footer-nav">
+                    <div class="footer-nav-group">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#workshop">WORKSHOP</a></li>
+                            <li><a href="#course">COURSE</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Course</h4>
+                        <ul>
+                            <li><a href="artist.html">アーティストコース</a></li>
+                            <li><a href="therapist.html">セラピストコース</a></li>
+                            <li><a href="order.html">オーダーメイド</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:nicolon@nicosand.com">メール</a></li>
+                            <li><a href="https://line.me/R/ti/p/@485etec" target="_blank" rel="noopener">LINE</a></li>
+                            <li><a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener">Instagram</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://line.me/R/ti/p/@485etec" target="_blank" rel="noopener" aria-label="LINE">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 nicolon - 日本サンドアート協会. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="ページトップに戻る">
+        <div class="nico-face">
+            <div class="nico-arrow"></div>
+            <div class="nico-eye left"></div>
+            <div class="nico-eye right"></div>
+            <div class="nico-smile"></div>
+        </div>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

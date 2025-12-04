@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
+  <defs>
+    <!-- イロトリドリのグラデーション -->
+    <linearGradient id="rainbowGradientWhite" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B9D"/>
+      <stop offset="20%" style="stop-color:#FFB347"/>
+      <stop offset="40%" style="stop-color:#F0E68C"/>
+      <stop offset="60%" style="stop-color:#98D8AA"/>
+      <stop offset="80%" style="stop-color:#87CEEB"/>
+      <stop offset="100%" style="stop-color:#DDA0DD"/>
+    </linearGradient>
+
+    <!-- ニコちゃん用グラデーション -->
+    <linearGradient id="smileGradientWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE066"/>
+      <stop offset="100%" style="stop-color:#FFB347"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ニコちゃんマーク -->
+  <circle cx="30" cy="40" r="25" fill="url(#smileGradientWhite)"/>
+  <circle cx="22" cy="35" r="4" fill="#333"/>
+  <circle cx="38" cy="35" r="4" fill="#333"/>
+  <path d="M 18 47 Q 30 58 42 47" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- nicolon テキスト（白） -->
+  <text x="65" y="52" font-family="'Quicksand', 'Arial Rounded MT Bold', sans-serif" font-size="42" font-weight="700" fill="#FFFFFF">nicolon</text>
+
+  <!-- sand art サブテキスト -->
+  <text x="67" y="70" font-family="'Quicksand', Arial, sans-serif" font-size="12" font-weight="500" fill="rgba(255,255,255,0.7)" letter-spacing="3">sand art</text>
+</svg>

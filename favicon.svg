@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="sandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B9D"/>
+      <stop offset="25%" style="stop-color:#FFB347"/>
+      <stop offset="50%" style="stop-color:#F0E68C"/>
+      <stop offset="75%" style="stop-color:#87CEEB"/>
+      <stop offset="100%" style="stop-color:#DDA0DD"/>
+    </linearGradient>
+  </defs>
+  <!-- Sand bottle shape -->
+  <path d="M35 15 L35 25 C25 28 20 35 20 45 L20 80 C20 88 28 95 40 95 L60 95 C72 95 80 88 80 80 L80 45 C80 35 75 28 65 25 L65 15 C65 12 62 10 50 10 C38 10 35 12 35 15 Z" fill="url(#sandGradient)"/>
+  <!-- Bottle neck highlight -->
+  <rect x="38" y="12" width="24" height="15" rx="3" fill="rgba(255,255,255,0.3)"/>
+  <!-- Sand layers inside -->
+  <path d="M25 85 Q35 82 50 85 Q65 88 75 85 L75 80 C75 85 65 90 50 90 C35 90 25 85 25 80 Z" fill="#FF6B9D" opacity="0.8"/>
+  <path d="M25 75 Q40 72 50 75 Q60 78 75 75 L75 70 Q60 73 50 70 Q40 67 25 70 Z" fill="#FFB347" opacity="0.8"/>
+  <path d="M25 65 Q35 68 50 65 Q65 62 75 65 L75 60 Q65 57 50 60 Q35 63 25 60 Z" fill="#87CEEB" opacity="0.8"/>
+  <!-- Smile face -->
+  <circle cx="40" cy="55" r="4" fill="#333"/>
+  <circle cx="60" cy="55" r="4" fill="#333"/>
+  <path d="M38 65 Q50 75 62 65" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Sparkle -->
+  <circle cx="70" cy="35" r="3" fill="white" opacity="0.8"/>
+</svg>
