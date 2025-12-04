@@ -2285,6 +2285,16 @@ button:focus-visible {
     transform: scale(1.05);
 }
 
+/* 虹色レッスン用：縦長画像を綺麗に収める */
+.course-card-image.rainbow-image {
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 17%, #48dbfb 34%, #1dd1a1 51%, #5f27cd 68%, #ff9ff3 85%, #ff6b6b 100%);
+}
+
+.course-card-image.rainbow-image img {
+    object-fit: contain;
+    padding: 10px;
+}
+
 .course-badge {
     position: absolute;
     top: var(--space-md);
