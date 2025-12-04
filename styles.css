@@ -2295,6 +2295,37 @@ button:focus-visible {
     color: var(--color-white);
 }
 
+.course-badge.rainbow {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFD93D 25%, #6BCB77 50%, #4D96FF 75%, #9B59B6 100%);
+    color: var(--color-white);
+}
+
+.course-card-details {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-sm) 0 var(--space-md);
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+}
+
+.course-card-details li {
+    padding: 4px 0;
+    padding-left: 1.4em;
+    position: relative;
+}
+
+.course-card-details li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.course-card-details li small {
+    color: var(--color-gray-500);
+}
+
 .course-card-content {
     padding: var(--space-lg);
 }
