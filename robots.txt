@@ -1,0 +1,6 @@
+# nicolon sand art website
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nicosand.com/sitemap.xml
