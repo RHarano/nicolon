@@ -3738,12 +3738,22 @@ button:focus-visible {
     }
 
     .flow-step {
-        flex-direction: column;
-        text-align: center;
+        gap: var(--space-md);
+        margin-bottom: var(--space-lg);
     }
 
     .flow-step-number {
-        margin: 0 auto var(--space-sm);
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .flow-step-content h3 {
+        font-size: 1rem;
+    }
+
+    .flow-step-content p {
+        font-size: 0.875rem;
     }
 
     .flow-step:not(:last-child)::after {
