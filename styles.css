@@ -114,6 +114,11 @@ body.loading {
     display: none;
 }
 
+/* PC専用表示クラス */
+.pc-only {
+    display: inline;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -2096,6 +2101,11 @@ button {
     /* SP専用表示 */
     .sp-only {
         display: inline;
+    }
+
+    /* PC専用非表示 */
+    .pc-only {
+        display: none;
     }
 
     /* SP専用センター */
