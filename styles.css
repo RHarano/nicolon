@@ -3562,6 +3562,156 @@ button:focus-visible {
 }
 
 /* --------------------------------
+   Notes List (Multiple Cards)
+   -------------------------------- */
+.notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --------------------------------
+   Order Notice
+   -------------------------------- */
+.order-notice {
+    max-width: 800px;
+    margin: var(--space-xl) auto 0;
+    padding: var(--space-lg);
+    background: linear-gradient(135deg, #fff5f0 0%, #fff 100%);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--sand-orange);
+}
+
+.order-notice p {
+    font-size: 0.9375rem;
+    color: var(--color-gray-700);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.order-notice strong {
+    color: var(--sand-orange);
+}
+
+/* --------------------------------
+   Voice Section (お客様の声)
+   -------------------------------- */
+.voice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.voice-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.voice-card::before {
+    content: '"';
+    position: absolute;
+    top: var(--space-md);
+    left: var(--space-lg);
+    font-size: 4rem;
+    font-family: var(--font-display);
+    color: var(--sand-pink);
+    opacity: 0.3;
+    line-height: 1;
+}
+
+.voice-content {
+    flex: 1;
+    padding-top: var(--space-lg);
+}
+
+.voice-content p {
+    font-size: 0.9375rem;
+    color: var(--color-gray-600);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.voice-tag {
+    display: inline-block;
+    margin-top: var(--space-md);
+    padding: 4px 12px;
+    background: var(--gradient-warm);
+    color: var(--color-white);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* --------------------------------
+   FAQ Section (よくある質問)
+   -------------------------------- */
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.faq-item {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.faq-question {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background: var(--gradient-warm);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.faq-question h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-gray-800);
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 4px;
+}
+
+.faq-answer {
+    margin-top: var(--space-md);
+    padding-left: calc(32px + var(--space-md));
+}
+
+.faq-answer p {
+    font-size: 0.9375rem;
+    color: var(--color-gray-600);
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* --------------------------------
    Subpage Responsive
    -------------------------------- */
 @media (max-width: 768px) {
@@ -3607,6 +3757,50 @@ button:focus-visible {
     .cta-buttons .btn {
         width: 100%;
         max-width: 280px;
+    }
+
+    /* Voice Section Responsive */
+    .voice-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .voice-card {
+        padding: var(--space-lg);
+    }
+
+    .voice-card::before {
+        font-size: 3rem;
+    }
+
+    /* FAQ Section Responsive */
+    .faq-item {
+        padding: var(--space-md);
+    }
+
+    .faq-answer {
+        padding-left: 0;
+        margin-top: var(--space-sm);
+    }
+
+    .faq-question {
+        gap: var(--space-sm);
+    }
+
+    .faq-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.875rem;
+    }
+
+    /* Notes Section Responsive */
+    .notes-card {
+        padding: var(--space-lg);
+    }
+
+    /* Order Notice Responsive */
+    .order-notice {
+        padding: var(--space-md);
     }
 }
 
