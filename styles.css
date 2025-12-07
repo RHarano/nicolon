@@ -2098,6 +2098,11 @@ button {
         display: inline;
     }
 
+    /* ヒーローセクションを左寄せ */
+    .hero-content {
+        text-align: left;
+    }
+
     /* aboutセクションのテキストを左寄せ */
     .about-text {
         text-align: left;
