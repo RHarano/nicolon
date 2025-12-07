@@ -2087,6 +2087,42 @@ button {
         flex-direction: column;
         gap: var(--space-lg);
     }
+
+    /* ワークショップセクションの説明文を左寄せ */
+    .workshop .section-description {
+        text-align: left;
+    }
+
+    /* イベント詳細のSPデザイン改善 */
+    .details-grid.cute {
+        padding: var(--space-md);
+        gap: var(--space-sm);
+    }
+
+    .details-grid.cute .details-item {
+        padding: var(--space-sm) var(--space-md);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 4px 8px;
+    }
+
+    .details-grid.cute .details-label {
+        font-size: 0.75rem;
+        min-width: 70px;
+    }
+
+    .details-grid.cute .details-value {
+        font-size: 0.9rem;
+        flex: 1;
+    }
+
+    .details-grid.cute .details-note {
+        width: 100%;
+        font-size: 0.7rem;
+        padding-left: 78px;
+        margin-top: 2px;
+    }
 }
 
 /* --------------------------------
