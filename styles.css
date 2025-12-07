@@ -4172,6 +4172,18 @@ button:focus-visible {
     .blog-card-content {
         padding: 1.25rem;
     }
+
+    .blog-card-title {
+        font-size: 0.95rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .blog-card-excerpt {
+        -webkit-line-clamp: 3;
+    }
 }
 
 /* ブログCTA */
@@ -4218,6 +4230,21 @@ button:focus-visible {
 .cta-box .btn-outline:hover {
     background: white;
     color: var(--color-primary);
+}
+
+@media (max-width: 576px) {
+    .cta-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .cta-box h2 {
+        font-size: 1.4rem;
+    }
+
+    .cta-box p {
+        text-align: left;
+        font-size: 0.9rem;
+    }
 }
 
 /* ブログ記事ページ */
