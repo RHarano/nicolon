@@ -109,6 +109,11 @@ body.loading {
     overflow: hidden;
 }
 
+/* SP専用表示クラス */
+.sp-only {
+    display: none;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -2086,6 +2091,16 @@ button {
     .footer-nav {
         flex-direction: column;
         gap: var(--space-lg);
+    }
+
+    /* SP専用表示 */
+    .sp-only {
+        display: inline;
+    }
+
+    /* aboutセクションのテキストを左寄せ */
+    .about-text {
+        text-align: left;
     }
 
     /* ワークショップセクションの説明文を左寄せ */
