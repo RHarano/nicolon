@@ -2935,16 +2935,52 @@ button:focus-visible {
 }
 
 .curriculum-item {
-    background: var(--color-white);
-    border-radius: var(--radius-lg);
-    padding: var(--space-lg);
-    box-shadow: var(--shadow-sm);
+    background: linear-gradient(135deg, #FFF5F8 0%, #FFF0E6 50%, #F0F8FF 100%);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    box-shadow: 0 4px 20px rgba(255, 107, 157, 0.1);
     transition: var(--transition-normal);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.curriculum-item::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, var(--sand-pink), var(--sand-orange), var(--sand-yellow), var(--sand-green), var(--sand-blue));
+    border-radius: var(--radius-xl);
+    z-index: -1;
+    opacity: 0.3;
 }
 
 .curriculum-item:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(255, 107, 157, 0.2);
+}
+
+.curriculum-item:hover::before {
+    opacity: 0.5;
+}
+
+.curriculum-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-warm);
+    border-radius: 50%;
+    margin-bottom: var(--space-md);
+    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
+}
+
+.curriculum-icon span {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-white);
 }
 
 .curriculum-number {
@@ -2965,13 +3001,17 @@ button:focus-visible {
 .curriculum-title {
     font-size: 1.125rem;
     font-weight: 600;
-    margin-bottom: var(--space-xs);
+    margin-bottom: var(--space-sm);
+    background: var(--gradient-warm);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .curriculum-description {
     font-size: 0.875rem;
     color: var(--color-gray-600);
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 /* Curriculum Simple (for Therapist) */
