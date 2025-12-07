@@ -2098,6 +2098,13 @@ button {
         display: inline;
     }
 
+    /* SP専用センター */
+    .sp-center {
+        display: block;
+        text-align: center;
+        margin-bottom: var(--space-sm);
+    }
+
     /* ヒーローセクションを左寄せ */
     .hero-content {
         text-align: left;
@@ -2105,6 +2112,11 @@ button {
 
     /* aboutセクションのテキストを左寄せ */
     .about-text {
+        text-align: left;
+    }
+
+    /* 講師紹介を左寄せ */
+    .instructor-bio {
         text-align: left;
     }
 
