@@ -2061,8 +2061,9 @@ button {
     }
 
     .about-features {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
     }
 
     .feature {
