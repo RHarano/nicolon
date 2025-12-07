@@ -3617,14 +3617,14 @@ button:focus-visible {
 }
 
 .voice-card::before {
-    content: '"';
+    content: '「';
     position: absolute;
-    top: var(--space-md);
-    left: var(--space-lg);
-    font-size: 4rem;
-    font-family: var(--font-display);
+    top: var(--space-sm);
+    left: var(--space-md);
+    font-size: 3rem;
+    font-family: var(--font-body);
     color: var(--sand-pink);
-    opacity: 0.3;
+    opacity: 0.4;
     line-height: 1;
 }
 
@@ -3673,6 +3673,7 @@ button:focus-visible {
     display: flex;
     align-items: flex-start;
     gap: var(--space-md);
+    text-align: left;
 }
 
 .faq-icon {
