@@ -130,6 +130,33 @@
     }
     </script>
 
+    <!-- 構造化データ - パンくずリスト -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ホーム",
+                "item": "https://nicosand.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "ブログ",
+                "item": "https://nicosand.com/blog.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "サンドアート体験イベント"
+            }
+        ]
+    }
+    </script>
+
     <link rel="canonical" href="https://nicosand.com/blog/taiken-event.html">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 
@@ -167,6 +194,17 @@
             </button>
         </div>
     </header>
+
+    <!-- パンくずリスト -->
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="../index.html">ホーム</a></li>
+                <li class="breadcrumb-item"><a href="../blog.html">ブログ</a></li>
+                <li class="breadcrumb-item current" aria-current="page">サンドアート体験イベント</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- 記事ヘッダー -->
     <section class="blog-post-hero">

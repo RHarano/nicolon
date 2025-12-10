@@ -71,6 +71,19 @@
     }
     </script>
 
+    <!-- 構造化データ - パンくずリスト -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://nicosand.com/"},
+            {"@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://nicosand.com/blog.html"},
+            {"@type": "ListItem", "position": 3, "name": "「ママ見てて！」は永遠に続く"}
+        ]
+    }
+    </script>
+
     <link rel="canonical" href="https://nicosand.com/blog/mama-mitete.html">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 
@@ -108,6 +121,17 @@
             </button>
         </div>
     </header>
+
+    <!-- パンくずリスト -->
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="../index.html">ホーム</a></li>
+                <li class="breadcrumb-item"><a href="../blog.html">ブログ</a></li>
+                <li class="breadcrumb-item current" aria-current="page">「ママ見てて！」は永遠に続く</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- 記事ヘッダー -->
     <section class="blog-post-hero">
@@ -196,12 +220,12 @@
                 <article class="blog-card">
                     <a href="kosodate-aruaru.html" class="blog-card-link">
                         <div class="blog-card-image">
-                            <img src="../img/IMG_1193.jpg" alt="子育てあるある" loading="lazy">
+                            <img src="../img/IMG_1570.jpg" alt="子育てあるある" loading="lazy">
                             <span class="blog-card-category">子育て</span>
                         </div>
                         <div class="blog-card-content">
-                            <time class="blog-card-date" datetime="2025-12-07">2025.12.07</time>
-                            <h3 class="blog-card-title">【子育てあるある8選】5児ママが語る共感必至のエピソード</h3>
+                            <time class="blog-card-date" datetime="2025-12-06">2025.12.06</time>
+                            <h3 class="blog-card-title">子育てあるある｜忙しい毎日でも「自分の時間」を見つける方法</h3>
                         </div>
                     </a>
                 </article>

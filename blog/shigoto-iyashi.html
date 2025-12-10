@@ -57,6 +57,19 @@
     }
     </script>
 
+    <!-- 構造化データ - パンくずリスト -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://nicosand.com/"},
+            {"@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://nicosand.com/blog.html"},
+            {"@type": "ListItem", "position": 3, "name": "働くことが「癒し」に変わる"}
+        ]
+    }
+    </script>
+
     <link rel="canonical" href="https://nicosand.com/blog/shigoto-iyashi.html">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 
@@ -94,6 +107,17 @@
             </button>
         </div>
     </header>
+
+    <!-- パンくずリスト -->
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="../index.html">ホーム</a></li>
+                <li class="breadcrumb-item"><a href="../blog.html">ブログ</a></li>
+                <li class="breadcrumb-item current" aria-current="page">働くことが「癒し」に変わる</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- 記事ヘッダー -->
     <section class="blog-post-hero">
@@ -172,13 +196,13 @@
             <div class="blog-related">
                 <h2>関連記事</h2>
                 <div class="blog-related-grid">
-                    <a href="mama-sandart.html" class="blog-related-card">
-                        <img src="../img/IMG_9770.png" alt="5児の母が語る子育てとサンドアート" loading="lazy">
-                        <h3>5児の母が語る！子育てしながらサンドアート講師として働く日々</h3>
+                    <a href="therapist-1day.html" class="blog-related-card">
+                        <img src="../img/IMG_9454.jpg" alt="セラピストコース" loading="lazy">
+                        <h3>サンドアートセラピストは1日で取得可能！資格取得から活動開始までを解説</h3>
                     </a>
-                    <a href="workshop-report-202411.html" class="blog-related-card">
-                        <img src="../img/IMG_3622.JPG" alt="ワークショップレポート" loading="lazy">
-                        <h3>ワークショップレポート｜笑顔あふれる週末イベント</h3>
+                    <a href="mama-sandart.html" class="blog-related-card">
+                        <img src="../img/IMG_9770.png" alt="子育てとサンドアート" loading="lazy">
+                        <h3>5児の母が語る！子育てしながらサンドアート講師として働く日々</h3>
                     </a>
                 </div>
             </div>
