@@ -4691,25 +4691,14 @@ button:focus-visible {
 
 /* blockquote スタイル */
 .blog-post-body blockquote {
-    background: var(--color-gray-50);
-    border-left: 4px solid var(--color-primary);
-    padding: 1.5rem 1.5rem 1.5rem 2rem;
-    margin: 1.5rem 0;
-    border-radius: 0 12px 12px 0;
-    font-style: italic;
-    color: var(--color-gray-600);
-    position: relative;
-}
-
-.blog-post-body blockquote::before {
-    content: '"';
-    font-size: 3rem;
-    color: var(--color-primary);
-    opacity: 0.3;
-    position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
-    line-height: 1;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    font-style: normal;
+    color: var(--color-gray-800);
+    line-height: 1.8;
 }
 
 /* 記事内CTA */
@@ -4938,8 +4927,12 @@ button:focus-visible {
         font-size: 1.75rem;
     }
 
+    .container-narrow {
+        padding: 0 1rem;
+    }
+
     .blog-post-body {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
     }
 
     .blog-author {
