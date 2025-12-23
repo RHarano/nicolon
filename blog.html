@@ -436,9 +436,17 @@
     <!-- ブログ一覧 -->
     <section class="section blog-list">
         <div class="container">
+            <div class="blog-filter animate-fade-up">
+                <button class="filter-btn active" data-filter="all">すべて</button>
+                <button class="filter-btn" data-filter="event">イベント</button>
+                <button class="filter-btn" data-filter="mama">子育て・ママ</button>
+                <button class="filter-btn" data-filter="lesson">講座・体験</button>
+                <button class="filter-btn" data-filter="gift">ギフト・オーダー</button>
+            </div>
+
             <div class="blog-grid">
                 <!-- 記事: 子育てママの働き方 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="mama">
                     <a href="blog/mama-shigoto-hajimekata.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_3354.jpg" alt="子育てママの働き方" loading="lazy">
@@ -455,7 +463,7 @@
                 </article>
 
                 <!-- 記事: マルシェ出店の始め方 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="lesson">
                     <a href="blog/marche-shutten-hajimekata.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/4879486315830578327.06a911016f297b1584f74e757ffc11d1.23050708.JPG" alt="マルシェ出店" loading="lazy">
@@ -472,7 +480,7 @@
                 </article>
 
                 <!-- 記事: チームビルディング研修 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="event">
                     <a href="blog/teambuilding-workshop.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_5343.JPG" alt="チームビルディング研修" loading="lazy">
@@ -489,7 +497,7 @@
                 </article>
 
                 <!-- 記事: 結婚式サンドアート -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="gift">
                     <a href="blog/wedding-sandart.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_3580.jpg" alt="結婚式サンドアート" loading="lazy">
@@ -506,7 +514,7 @@
                 </article>
 
                 <!-- 記事: 児童館・子育て支援センター -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="mama">
                     <a href="blog/jidoukan-kosodate-shien.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_2538 2.JPG" alt="児童館・子育て支援センターでのサンドアート" loading="lazy">
@@ -523,7 +531,7 @@
                 </article>
 
                 <!-- 記事: 想家工房様イベント -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="event">
                     <a href="blog/soukakoubo-event.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_9024 2.jpg" alt="想家工房株式会社様イベント" loading="lazy">
@@ -540,7 +548,7 @@
                 </article>
 
                 <!-- 記事: レインボーマルシェ様イベント -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="event">
                     <a href="blog/rainbow-marche-event.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_0389.jpg" alt="レインボーマルシェ様イベント" loading="lazy">
@@ -557,7 +565,7 @@
                 </article>
 
                 <!-- 記事: 出張ワークショップSEO記事 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="event">
                     <a href="blog/sandart-shutcho-workshop.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_4773.jpg" alt="サンドアート出張ワークショップ" loading="lazy">
@@ -574,7 +582,7 @@
                 </article>
 
                 <!-- 記事: 企業イベント -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="event">
                     <a href="blog/corporate-event.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_7489.jpg" alt="企業イベントでのサンドアートワークショップ" loading="lazy">
@@ -591,7 +599,7 @@
                 </article>
 
                 <!-- 記事: お正月ニコちゃん賀正サンド -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="gift">
                     <a href="blog/newyear-sandart.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_1056.jpg" alt="ニコちゃん賀正サンドアート" loading="lazy">
@@ -608,7 +616,7 @@
                 </article>
 
                 <!-- 記事: サンドアートの魅力 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="lesson">
                     <a href="blog/sandart-miryoku.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_2548.jpg" alt="サンドアートの魅力" loading="lazy">
@@ -625,7 +633,7 @@
                 </article>
 
                 <!-- 記事: 歳の離れた兄弟 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="mama">
                     <a href="blog/instagram-story.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_8211.JPG" alt="歳の離れた兄弟" loading="lazy">
@@ -642,7 +650,7 @@
                 </article>
 
                 <!-- 記事: オンライン体験不安解消 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="lesson">
                     <a href="blog/online-lesson-fuan.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/lesson.jpg" alt="オンライン体験" loading="lazy">
@@ -659,7 +667,7 @@
                 </article>
 
                 <!-- 記事: 虹色サンドアートギフト -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="lesson">
                     <a href="blog/rainbow-gift.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/rainbow.png" alt="虹色サンドアートギフト" loading="lazy">
@@ -676,7 +684,7 @@
                 </article>
 
                 <!-- 記事: 介護施設レク -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="event">
                     <a href="blog/kaigo-rec.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/4935642240831038621.171784653eec7594783af327d494736c.23100807 2.JPG" alt="介護施設レクリエーション" loading="lazy">
@@ -693,7 +701,7 @@
                 </article>
 
                 <!-- 記事: セラピストコース1日取得 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="lesson">
                     <a href="blog/therapist-1day.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_9454.jpg" alt="セラピストコース" loading="lazy">
@@ -710,7 +718,7 @@
                 </article>
 
                 <!-- 記事: 高齢者向けサンドアート -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="event">
                     <a href="blog/senior-sandart.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_5366.JPG" alt="高齢者向けサンドアート" loading="lazy">
@@ -727,7 +735,7 @@
                 </article>
 
                 <!-- 記事: 体験イベント -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="event">
                     <a href="blog/taiken-event.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_4773.jpg" alt="サンドアート体験イベント" loading="lazy">
@@ -744,7 +752,7 @@
                 </article>
 
                 <!-- 記事: ママ見てて -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="mama">
                     <a href="blog/mama-mitete.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_5304.JPG" alt="ママ見てて" loading="lazy">
@@ -761,7 +769,7 @@
                 </article>
 
                 <!-- 記事: 子育てあるある -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="mama">
                     <a href="blog/kosodate-aruaru.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_1193.jpg" alt="子育てあるある" loading="lazy">
@@ -778,7 +786,7 @@
                 </article>
 
                 <!-- 記事: 働くことが癒しに -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="mama">
                     <a href="blog/shigoto-iyashi.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_3624.JPG" alt="働くことが癒しに変わる" loading="lazy">
@@ -795,7 +803,7 @@
                 </article>
 
                 <!-- 記事1 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="lesson">
                     <a href="blog/rainbow-lesson.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/rainbow.png" alt="虹色レッスン" loading="lazy">
@@ -812,7 +820,7 @@
                 </article>
 
                 <!-- 記事2 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="mama">
                     <a href="blog/mama-sandart.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_9770.png" alt="子育てとサンドアート" loading="lazy">
@@ -829,7 +837,7 @@
                 </article>
 
                 <!-- 記事2 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="lesson">
                     <a href="blog/sandart-hajimekata.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_2531 2.JPG" alt="サンドアートの始め方" loading="lazy">
@@ -846,7 +854,7 @@
                 </article>
 
                 <!-- 記事2 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="event">
                     <a href="blog/workshop-report-202411.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_3622.JPG" alt="ワークショップレポート" loading="lazy">
@@ -863,7 +871,7 @@
                 </article>
 
                 <!-- 記事3 -->
-                <article class="blog-card">
+                <article class="blog-card" data-category="gift">
                     <a href="blog/order-gift-idea.html" class="blog-card-link">
                         <div class="blog-card-image">
                             <img src="img/IMG_9338.jpg" alt="ギフトアイデア" loading="lazy">

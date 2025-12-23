@@ -318,33 +318,62 @@ function initScrollAnimations() {
 }
 
 /**
- * ギャラリーフィルター
+ * ギャラリー・ブログフィルター
  */
 function initGalleryFilter() {
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    // ギャラリーフィルター
+    const galleryFilter = document.querySelector('.gallery-filter');
+    if (galleryFilter) {
+        const filterBtns = galleryFilter.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
 
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // アクティブボタンの更新
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
 
-            const filter = btn.getAttribute('data-filter');
+                const filter = btn.getAttribute('data-filter');
 
-            // フィルタリング
-            galleryItems.forEach(item => {
-                const category = item.getAttribute('data-category');
+                galleryItems.forEach(item => {
+                    const category = item.getAttribute('data-category');
 
-                if (filter === 'all' || category === filter) {
-                    item.style.display = 'block';
-                    item.style.animation = 'scaleIn 0.4s ease forwards';
-                } else {
-                    item.style.display = 'none';
-                }
+                    if (filter === 'all' || category === filter) {
+                        item.style.display = 'block';
+                        item.style.animation = 'scaleIn 0.4s ease forwards';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
             });
         });
-    });
+    }
+
+    // ブログフィルター
+    const blogFilter = document.querySelector('.blog-filter');
+    if (blogFilter) {
+        const filterBtns = blogFilter.querySelectorAll('.filter-btn');
+        const blogCards = document.querySelectorAll('.blog-grid .blog-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                blogCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'flex';
+                        card.style.animation = 'fadeInUp 0.4s ease forwards';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
 }
 
 /**
