@@ -2633,8 +2633,9 @@ button:focus-visible {
 
 /* 虹色レッスン用：縦長画像を綺麗に収める */
 .course-card-image.rainbow-image {
-    background: var(--color-white);
-    border: 1px solid var(--color-gray-200);
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, #ff6b6b, #ffa500, #ffd93d, #6bcb77, #4d96ff, #9b59b6, #ff6b9d) border-box;
+    border: 2px solid transparent;
     border-radius: 12px;
 }
 
