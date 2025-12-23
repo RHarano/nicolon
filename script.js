@@ -365,10 +365,12 @@ function initGalleryFilter() {
                     const category = card.getAttribute('data-category');
 
                     if (filter === 'all' || category === filter) {
-                        card.style.display = 'flex';
+                        card.style.display = '';
+                        card.style.opacity = '0';
                         card.style.animation = 'fadeInUp 0.4s ease forwards';
                     } else {
                         card.style.display = 'none';
+                        card.style.animation = 'none';
                     }
                 });
             });
