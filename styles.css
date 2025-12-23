@@ -4365,7 +4365,7 @@ button:focus-visible {
 }
 
 .blog-card-content {
-    padding: 1.25rem 1.5rem;
+    padding: 1.5rem 1.5rem 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4435,7 +4435,7 @@ button:focus-visible {
     }
 
     .blog-card-content {
-        padding: 1.25rem;
+        padding: 1.25rem 1rem 1rem;
     }
 
     .blog-card-title {
