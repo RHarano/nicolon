@@ -2633,7 +2633,7 @@ button:focus-visible {
 
 /* 虹色レッスン用：縦長画像を綺麗に収める */
 .course-card-image.rainbow-image {
-    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 17%, #48dbfb 34%, #1dd1a1 51%, #5f27cd 68%, #ff9ff3 85%, #ff6b6b 100%);
+    background: var(--color-white);
 }
 
 .course-card-image.rainbow-image img {
@@ -3039,6 +3039,19 @@ button:focus-visible {
 
 .page-hero-badge.orange {
     background: rgba(255, 179, 71, 0.3);
+}
+
+.page-hero-badge-inline {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    vertical-align: middle;
 }
 
 .page-hero-title {
