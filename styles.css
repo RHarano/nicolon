@@ -279,6 +279,25 @@ button {
     color: var(--color-gray-800);
     position: relative;
     padding: var(--space-xs) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.nav-en {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.nav-ja {
+    font-size: 0.625rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    opacity: 0.7;
+    margin-top: 2px;
 }
 
 .nav-link::after {
@@ -1673,6 +1692,218 @@ button {
 }
 
 /* --------------------------------
+   Why Choose Section (選ばれる理由)
+   -------------------------------- */
+.why-choose {
+    background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-white) 100%);
+}
+
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.why-choose-item {
+    background: var(--color-white);
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-choose-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(255, 107, 157, 0.15);
+}
+
+.why-choose-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background: var(--gradient-warm);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-choose-icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: white;
+}
+
+.why-choose-item h3 {
+    font-size: 1.1rem;
+    color: var(--color-gray-800);
+    margin-bottom: 0.75rem;
+}
+
+.why-choose-item p {
+    font-size: 0.9rem;
+    color: var(--color-gray-600);
+    line-height: 1.7;
+}
+
+@media (max-width: 992px) {
+    .why-choose-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .why-choose-item {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* 実績バナー */
+.stats-banner {
+    background: var(--gradient-warm);
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+
+.stats-banner-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.stats-banner-item {
+    text-align: center;
+    color: white;
+}
+
+.stats-banner-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--font-en);
+    display: block;
+}
+
+.stats-banner-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .stats-banner-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-banner-number {
+        font-size: 2rem;
+    }
+}
+
+/* --------------------------------
+   FAQ Section
+   -------------------------------- */
+.faq {
+    background: var(--color-white);
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 3rem auto 0;
+}
+
+.faq-item {
+    border: 1px solid var(--color-gray-200);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    background: var(--color-gray-100);
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-gray-800);
+    transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+    background: var(--color-gray-200);
+}
+
+.faq-question::before {
+    content: 'Q.';
+    color: var(--sand-pink);
+    font-weight: 700;
+    margin-right: 0.75rem;
+}
+
+.faq-icon {
+    width: 24px;
+    height: 24px;
+    stroke: var(--color-gray-600);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.faq-answer-content {
+    padding: 1.25rem 1.5rem;
+    color: var(--color-gray-600);
+    line-height: 1.8;
+}
+
+.faq-answer-content::before {
+    content: 'A.';
+    color: var(--sand-orange);
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .faq-question {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .faq-answer-content {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* --------------------------------
    Contact Section
    -------------------------------- */
 .contact {
@@ -2009,6 +2240,18 @@ button {
 
     .nav-link {
         font-size: 1rem;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: baseline;
+    }
+
+    .nav-en {
+        font-size: 1rem;
+    }
+
+    .nav-ja {
+        font-size: 0.75rem;
+        margin-top: 0;
     }
 
     .hamburger {
