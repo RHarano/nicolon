@@ -2712,6 +2712,42 @@ button:focus-visible {
     font-size: 1.375rem;
     font-weight: 700;
     margin-bottom: var(--space-xs);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.course-title-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    background: var(--color-gray-100);
+    color: var(--color-gray-700);
+    white-space: nowrap;
+}
+
+.course-title-badge.popular {
+    background: linear-gradient(135deg, #ff6b9d, #ff8a65);
+    color: var(--color-white);
+}
+
+.course-title-badge.basic {
+    background: var(--color-cream);
+    color: var(--color-gray-700);
+}
+
+.course-title-badge.smile {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.course-title-badge.rainbow {
+    background: linear-gradient(135deg, #ff6b6b, #ffa500, #ffd93d, #6bcb77, #4d96ff, #9b59b6);
+    color: var(--color-white);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .course-card-price {
