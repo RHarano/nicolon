@@ -9,12 +9,12 @@
    -------------------------------- */
 :root {
     /* メインカラー（砂の色をベースに） */
-    --color-primary: #FF6B9D;      /* ピンクサンド */
+    --color-primary: #E8A0A0;      /* ダスティローズ */
     --color-secondary: #87CEEB;    /* スカイブルー */
     --color-accent: #FFB347;       /* オレンジサンド */
 
     /* サンドカラーパレット */
-    --sand-pink: #FF6B9D;
+    --sand-pink: #E8A0A0;
     --sand-orange: #FFB347;
     --sand-yellow: #F0E68C;
     --sand-green: #98D8AA;
@@ -4719,12 +4719,7 @@ button:focus-visible {
 }
 
 .blog-card-date::before {
-    content: '';
-    width: 12px;
-    height: 2px;
-    background: linear-gradient(90deg, var(--sand-pink), var(--sand-orange));
-    margin-right: 0.5rem;
-    border-radius: 1px;
+    display: none;
 }
 
 .blog-card-title {
@@ -4926,29 +4921,19 @@ button:focus-visible {
 }
 
 .blog-post-title::after {
-    content: '';
-    position: absolute;
-    bottom: -0.5rem;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-    border-radius: 2px;
+    display: none;
 }
 
 .blog-post-date-category {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+    display: none;
 }
 
 .blog-post-date {
-    font-size: 0.95rem;
-    opacity: 0.9;
+    display: none;
 }
 
 .blog-post-date-category .blog-post-category {
-    margin-left: auto;
+    display: none;
 }
 
 /* 記事本文 */
