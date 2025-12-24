@@ -9,12 +9,12 @@
    -------------------------------- */
 :root {
     /* メインカラー（砂の色をベースに） */
-    --color-primary: #E8A0A0;      /* ダスティローズ */
+    --color-primary: #FF8DA1;      /* コーラルピンク */
     --color-secondary: #87CEEB;    /* スカイブルー */
     --color-accent: #FFB347;       /* オレンジサンド */
 
     /* サンドカラーパレット */
-    --sand-pink: #E8A0A0;
+    --sand-pink: #FF8DA1;
     --sand-orange: #FFB347;
     --sand-yellow: #F0E68C;
     --sand-green: #98D8AA;
