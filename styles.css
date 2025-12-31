@@ -4873,6 +4873,12 @@ button:focus-visible {
     background: linear-gradient(135deg, var(--sand-pink) 0%, var(--sand-purple) 100%);
     padding: 4rem 0;
     color: white;
+    margin-top: 80px; /* 固定ヘッダー分のマージン（パンくずリストがない場合用） */
+}
+
+/* パンくずリストがある場合はマージンを解除 */
+.breadcrumb + .blog-post-hero {
+    margin-top: 0;
 }
 
 .blog-post-meta {
