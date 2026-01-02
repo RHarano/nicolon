@@ -41,10 +41,25 @@
         "provider": {
             "@type": "LocalBusiness",
             "name": "nicolon サンドアート",
-            "url": "https://nicosand.com"
+            "url": "https://nicosand.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "福岡県",
+                "addressCountry": "JP"
+            },
+            "priceRange": "¥2,000〜"
         },
         "areaServed": "Japan",
-        "serviceType": "ワークショップ・イベント出張"
+        "serviceType": "ワークショップ・イベント出張",
+        "offers": {
+            "@type": "Offer",
+            "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "2000",
+                "priceCurrency": "JPY",
+                "unitText": "1人あたり"
+            }
+        }
     }
     </script>
 
@@ -76,6 +91,22 @@
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "1名様から100名規模まで対応可能です。人数に応じた最適なプランをご提案します。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "他のワークショップと何が違いますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "講師が一人ひとり丁寧にサポートするため失敗がなく、必ず美しい作品が完成します。準備・片付けもすべてお任せいただけます。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "リピート開催の割引はありますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "年間契約や定期開催の場合は特別価格をご用意しています。詳しくはお問い合わせください。"
                 }
             }
         ]
@@ -811,6 +842,70 @@
             font-weight: 700;
         }
 
+        /* Price Examples */
+        .lp-price-examples {
+            margin-top: 48px;
+            padding: 32px;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+        }
+
+        .lp-price-examples h3 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: var(--text);
+        }
+
+        .lp-price-example-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .lp-price-example-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .lp-price-example-item {
+            text-align: center;
+            padding: 20px;
+            background: var(--bg);
+            border-radius: 12px;
+        }
+
+        .lp-price-example-num {
+            display: block;
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+
+        .lp-price-example-price {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .lp-price-example-note {
+            display: block;
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        .lp-price-example-note-text {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-light);
+            margin-top: 20px;
+        }
+
         /* FAQ */
         .lp-faq {
             max-width: 800px;
@@ -914,6 +1009,14 @@
 
         .lp-cta-btn.secondary:hover {
             background: rgba(255,255,255,0.1);
+        }
+
+        .lp-cta-btn small {
+            display: block;
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 4px;
+            opacity: 0.9;
         }
 
         /* Footer */
@@ -1486,6 +1589,28 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="lp-price-examples">
+                <h3>料金目安</h3>
+                <div class="lp-price-example-grid">
+                    <div class="lp-price-example-item">
+                        <span class="lp-price-example-num">20名</span>
+                        <span class="lp-price-example-price">約5万円〜</span>
+                        <span class="lp-price-example-note">材料費＋講師代</span>
+                    </div>
+                    <div class="lp-price-example-item">
+                        <span class="lp-price-example-num">50名</span>
+                        <span class="lp-price-example-price">約10万円〜</span>
+                        <span class="lp-price-example-note">材料費＋講師代</span>
+                    </div>
+                    <div class="lp-price-example-item">
+                        <span class="lp-price-example-num">100名</span>
+                        <span class="lp-price-example-price">約18万円〜</span>
+                        <span class="lp-price-example-note">材料費＋講師代</span>
+                    </div>
+                </div>
+                <p class="lp-price-example-note-text">※交通費別途。定期開催・年間契約の場合は特別価格をご用意しています。</p>
+            </div>
         </div>
     </section>
 
@@ -1530,6 +1655,14 @@
                     <summary>請求書払いは可能ですか？</summary>
                     <div class="lp-faq-answer">法人様は請求書払いに対応しています。月末締め翌月末払いなど、御社の経理処理に合わせて対応可能ですので、ご相談ください。</div>
                 </details>
+                <details class="lp-faq-item">
+                    <summary>他のワークショップと何が違いますか？</summary>
+                    <div class="lp-faq-answer">工作キットと違い、講師が一人ひとり丁寧にサポートするため失敗がなく、必ず美しい作品が完成します。また、5児の母ならではの子ども対応力で、小さなお子様も安心して参加できます。準備・片付けもすべてお任せいただけるので、担当者様の負担がゼロです。</div>
+                </details>
+                <details class="lp-faq-item">
+                    <summary>リピート開催の割引はありますか？</summary>
+                    <div class="lp-faq-answer">はい、年間契約や定期開催の場合は特別価格をご用意しています。毎月開催、季節ごとの開催など、継続的なイベント企画にも対応可能です。詳しくはお問い合わせください。</div>
+                </details>
             </div>
         </div>
     </section>
@@ -1539,8 +1672,8 @@
         <h2>まずはお気軽にご相談ください</h2>
         <p>開催内容や人数に合わせて、最適なプランをご提案いたします。<br>お見積りは無料です。</p>
         <div class="lp-cta-buttons">
-            <a href="contact.html" class="lp-cta-btn primary">無料でお見積り</a>
-            <a href="https://lin.ee/IT7L1Jd" target="_blank" rel="noopener" class="lp-cta-btn secondary">LINEで相談</a>
+            <a href="contact.html" class="lp-cta-btn primary">無料でお見積り<small>24時間以内に返信</small></a>
+            <a href="https://lin.ee/IT7L1Jd" target="_blank" rel="noopener" class="lp-cta-btn secondary">LINEで相談<small>お気軽にどうぞ</small></a>
         </div>
     </section>
 
