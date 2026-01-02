@@ -906,6 +906,57 @@
             margin-top: 20px;
         }
 
+        /* Why Choose */
+        .lp-why-choose {
+            margin-top: 60px;
+            padding: 40px;
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+            border-radius: 20px;
+            color: var(--white);
+        }
+
+        .lp-why-choose h3 {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+
+        .lp-why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .lp-why-choose-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .lp-why-choose-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .lp-why-choose-icon {
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+
+        .lp-why-choose-content h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .lp-why-choose-content p {
+            font-size: 14px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
         /* FAQ */
         .lp-faq {
             max-width: 800px;
@@ -1326,6 +1377,41 @@
                         <li>コレクション性あり</li>
                         <li>SNS映えで口コミ拡散</li>
                     </ul>
+                </div>
+            </div>
+
+            <!-- 選ばれる理由 -->
+            <div class="lp-why-choose">
+                <h3>nicolonが選ばれる理由</h3>
+                <div class="lp-why-choose-grid">
+                    <div class="lp-why-choose-item">
+                        <span class="lp-why-choose-icon">👶</span>
+                        <div class="lp-why-choose-content">
+                            <h4>5児の母ならではの子ども対応力</h4>
+                            <p>小さなお子様の「できない」を「できた！」に変えるサポート力。泣いてしまうお子様もすぐに笑顔になります。</p>
+                        </div>
+                    </div>
+                    <div class="lp-why-choose-item">
+                        <span class="lp-why-choose-icon">📍</span>
+                        <div class="lp-why-choose-content">
+                            <h4>福岡拠点で九州エリアはお得</h4>
+                            <p>福岡を拠点に活動しているため、九州エリアは交通費を抑えてご依頼いただけます。</p>
+                        </div>
+                    </div>
+                    <div class="lp-why-choose-item">
+                        <span class="lp-why-choose-icon">🔄</span>
+                        <div class="lp-why-choose-content">
+                            <h4>定期開催・年間契約で割引</h4>
+                            <p>毎月開催や年間契約など、継続的にご依頼いただくお客様には特別価格をご用意しています。</p>
+                        </div>
+                    </div>
+                    <div class="lp-why-choose-item">
+                        <span class="lp-why-choose-icon">💬</span>
+                        <div class="lp-why-choose-content">
+                            <h4>事前打ち合わせがスムーズ</h4>
+                            <p>LINE・メール・Zoomなど、ご希望の方法でお打ち合わせ。忙しい担当者様の負担を最小限に。</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
