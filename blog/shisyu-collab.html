@@ -83,13 +83,43 @@
     <link rel="stylesheet" href="../styles.css">
     <style>
         .blog-video {
-            margin: 2rem 0;
+            margin: 2rem auto;
             border-radius: 12px;
             overflow: hidden;
+            max-width: 500px;
         }
         .blog-video video {
             width: 100%;
             display: block;
+        }
+        @media (max-width: 768px) {
+            .blog-video {
+                max-width: 100%;
+            }
+        }
+        .toc {
+            background: #f5f3ef;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+        }
+        .toc h3 {
+            margin-bottom: 1rem;
+            color: #5a7a6e;
+        }
+        .toc ol {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        .toc li {
+            margin: 0.5rem 0;
+        }
+        .toc a {
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            color: #7c9a8e;
         }
     </style>
 </head>
@@ -158,6 +188,17 @@
             <div class="blog-post-body">
                 <p class="lead">日々の暮らしや子どもたちへの想いを、刺繍というかたちで丁寧に表現する刺繍作家ママ。同じ"ママ目線"で、「今この瞬間の想いを残したい」という気持ちが重なり、今回のコラボレーションが生まれました。</p>
 
+                <div class="toc">
+                    <h3>この記事の内容</h3>
+                    <ol>
+                        <li><a href="#order">刺繍オーダーのご案内</a></li>
+                        <li><a href="#deai">ママクリエイター同士の出会い</a></li>
+                        <li><a href="#sakuhin">想いが重なって生まれた作品</a></li>
+                        <li><a href="#mugen">サンドアートの世界は無限大</a></li>
+                        <li><a href="#collab">コラボレーションのご依頼</a></li>
+                    </ol>
+                </div>
+
                 <div class="blog-video">
                     <video controls playsinline>
                         <source src="../img/789220486.962073.mp4" type="video/mp4">
@@ -165,7 +206,7 @@
                     </video>
                 </div>
 
-                <div class="blog-cta-box" style="background: linear-gradient(135deg, #fff8f5 0%, #fef3ee 100%); border: 2px solid #e8b4a0;">
+                <div id="order" class="blog-cta-box" style="background: linear-gradient(135deg, #fff8f5 0%, #fef3ee 100%); border: 2px solid #e8b4a0;">
                     <h3 style="color: #5a7a6e;">刺繍オーダー受付中</h3>
                     <p style="font-size: 1.1em;">今回コラボさせていただいた刺繍作家さんは、<br><strong>あらゆる刺繍オーダー</strong>を受け付けています。</p>
 
@@ -199,7 +240,7 @@
                     </div>
                 </div>
 
-                <h2>ママクリエイター同士の出会い</h2>
+                <h2 id="deai">ママクリエイター同士の出会い</h2>
 
                 <p>刺繍作家さんとの出会いは、お互いの作品をSNSで見たことがきっかけでした。</p>
 
@@ -207,14 +248,14 @@
 
                 <p>私もサンドアートで同じように、「今この瞬間の想い」を形にしたいと思って活動しているので、共感する部分がとても多かったんです。</p>
 
-                <h2>想いが重なって生まれた作品</h2>
+                <h2 id="sakuhin">想いが重なって生まれた作品</h2>
 
                 <p>今回のコラボでは、刺繍とサンドアート、それぞれの良さを活かしながら、<strong>一つの作品として融合</strong>させることに挑戦しました。</p>
 
                 <p>刺繍の繊細さとサンドアートの色彩の美しさ。<br>
                 異なる素材でありながら、「想いを形にする」という共通のテーマで繋がっています。</p>
 
-                <h2>サンドアートの世界は無限大</h2>
+                <h2 id="mugen">サンドアートの世界は無限大</h2>
 
                 <p>サンドアートは、<strong>他のアートやクラフトとの相性がとても良い</strong>んです。</p>
 
@@ -222,7 +263,7 @@
 
                 <p>「こんなことできるかな？」というアイデアがあれば、ぜひご相談ください。一緒に新しい作品を作り上げていく過程も、サンドアートの楽しさの一つです。</p>
 
-                <h2>コラボレーションのご依頼も承ります</h2>
+                <h2 id="collab">コラボレーションのご依頼も承ります</h2>
 
                 <p>作家さん同士のコラボレーション、企業様とのコラボ商品開発など、さまざまなご相談をお受けしています。</p>
 
