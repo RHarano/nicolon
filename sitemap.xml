@@ -70,6 +70,18 @@
 
   <!-- Blog Articles -->
   <url>
+    <loc>https://nicosand.com/blog/mama-work.html</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/shisyu-collab.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nicosand.com/blog/jutakutenjijo-shukaku.html</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
