@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactParticles();
     initBackToTop();
     initFAQ();
+    initBlogSlider();
 });
 
 /**
@@ -608,5 +609,63 @@ function initFAQ() {
             // クリックしたアイテムをトグル
             item.classList.toggle('active');
         });
+    });
+}
+
+/**
+ * ブログ記事用スライダー（自動再生）
+ */
+function initBlogSlider() {
+    const sliders = document.querySelectorAll('.blog-slider');
+    if (sliders.length === 0) return;
+
+    sliders.forEach(slider => {
+        const track = slider.querySelector('.blog-slider-track');
+        const slides = slider.querySelectorAll('.blog-slider-slide');
+        const dotsContainer = slider.querySelector('.blog-slider-dots');
+
+        if (!track || slides.length === 0 || !dotsContainer) return;
+
+        let currentIndex = 0;
+        const slideCount = slides.length;
+
+        // ドットを生成
+        for (let i = 0; i < slideCount; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('blog-slider-dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+
+        const dots = dotsContainer.querySelectorAll('.blog-slider-dot');
+
+        function goToSlide(index) {
+            // インデックスを範囲内に収める
+            if (index < 0) index = 0;
+            if (index >= slideCount) index = 0;
+
+            currentIndex = index;
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+            dots.forEach((dot, i) => {
+                if (i === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            let nextIndex = currentIndex + 1;
+            if (nextIndex >= slideCount) {
+                nextIndex = 0;
+            }
+            goToSlide(nextIndex);
+        }
+
+        // 3秒ごとに自動スライド
+        setInterval(nextSlide, 3000);
     });
 }
