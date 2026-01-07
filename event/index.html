@@ -114,11 +114,12 @@
     </script>
 
     <link rel="canonical" href="https://nicosand.com/event/">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
 
     <style>
         :root {
@@ -1219,12 +1220,33 @@
     </style>
 </head>
 <body>
-    <!-- LP Header -->
-    <header class="lp-header">
-        <a href="index.html" class="lp-logo">
-            <img src="img/logo.svg" alt="nicolon" width="100" height="36">
-        </a>
-        <a href="contact.html" class="lp-header-cta">無料でお見積り</a>
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.svg" alt="nicolon sand art" class="logo-img" width="140" height="50">
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link"><span class="nav-en">HOME</span><span class="nav-ja">ホーム</span></a></li>
+                    <li><a href="../about.html" class="nav-link"><span class="nav-en">ABOUT</span><span class="nav-ja">私について</span></a></li>
+                    <li><a href="../workshop.html" class="nav-link"><span class="nav-en">WORKSHOP</span><span class="nav-ja">ワークショップ</span></a></li>
+                    <li><a href="../course.html" class="nav-link"><span class="nav-en">COURSE</span><span class="nav-ja">講座</span></a></li>
+                    <li><a href="../gallery.html" class="nav-link"><span class="nav-en">GALLERY</span><span class="nav-ja">ギャラリー</span></a></li>
+                    <li><a href="../order.html" class="nav-link"><span class="nav-en">ORDER</span><span class="nav-ja">オーダー</span></a></li>
+                    <li><a href="../blog.html" class="nav-link"><span class="nav-en">BLOG</span><span class="nav-ja">ブログ</span></a></li>
+                    <li><a href="./" class="nav-link active"><span class="nav-en">FOR BUSINESS</span><span class="nav-ja">企業様向け</span></a></li>
+                    <li><a href="../contact.html" class="nav-link nav-link-cta"><span class="nav-en">CONTACT</span><span class="nav-ja">お問い合わせ</span></a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
     <!-- Hero -->
@@ -1241,12 +1263,12 @@
                 <p class="lp-booking-status">
                     📅 2025年1〜3月の土日祝：残り<strong>5枠</strong>
                 </p>
-                <a href="contact.html" class="lp-hero-cta">
+                <a href="../contact.html" class="lp-hero-cta">
                     まずは無料相談 →
                 </a>
             </div>
             <div class="lp-hero-image">
-                <img src="img/IMG_7489.webp" alt="サンドアートワークショップの様子" width="500" height="350">
+                <img src="../img/IMG_7489.webp" alt="サンドアートワークショップの様子" width="500" height="350">
             </div>
         </div>
     </section>
@@ -1455,7 +1477,7 @@
             <div class="lp-cases">
                 <div class="lp-case-card">
                     <div class="lp-case-image">
-                        <img src="img/IMG_9748.webp" alt="住宅展示場での開催" loading="lazy">
+                        <img src="../img/IMG_9748.webp" alt="住宅展示場での開催" loading="lazy">
                         <span class="lp-case-badge">住宅展示場</span>
                     </div>
                     <div class="lp-case-content">
@@ -1469,7 +1491,7 @@
                 </div>
                 <div class="lp-case-card">
                     <div class="lp-case-image">
-                        <img src="img/IMG_3622.webp" alt="ショッピングモールでの開催" loading="lazy">
+                        <img src="../img/IMG_3622.webp" alt="ショッピングモールでの開催" loading="lazy">
                         <span class="lp-case-badge">商業施設</span>
                     </div>
                     <div class="lp-case-content">
@@ -1483,7 +1505,7 @@
                 </div>
                 <div class="lp-case-card">
                     <div class="lp-case-image">
-                        <img src="img/IMG_5366.webp" alt="福祉施設での開催" loading="lazy">
+                        <img src="../img/IMG_5366.webp" alt="福祉施設での開催" loading="lazy">
                         <span class="lp-case-badge">福祉施設</span>
                     </div>
                     <div class="lp-case-content">
@@ -1497,7 +1519,7 @@
                 </div>
                 <div class="lp-case-card">
                     <div class="lp-case-image">
-                        <img src="img/IMG_5617.webp" alt="企業イベントでの開催" loading="lazy">
+                        <img src="../img/IMG_5617.webp" alt="企業イベントでの開催" loading="lazy">
                         <span class="lp-case-badge">企業イベント</span>
                     </div>
                     <div class="lp-case-content">
@@ -1571,7 +1593,7 @@
 
             <div class="lp-instructor">
                 <div class="lp-instructor-image">
-                    <img src="img/IMG_9593.webp" alt="講師 原野玲未" loading="lazy">
+                    <img src="../img/IMG_9593.webp" alt="講師 原野玲未" loading="lazy">
                 </div>
                 <div class="lp-instructor-content">
                     <h3>nicolon 原野玲未</h3>
@@ -1784,7 +1806,7 @@
         <h2>まずはお気軽にご相談ください</h2>
         <p>開催内容や人数に合わせて、最適なプランをご提案いたします。<br>お見積りは無料です。</p>
         <div class="lp-cta-buttons">
-            <a href="contact.html" class="lp-cta-btn primary">無料でお見積り<small>24時間以内に返信</small></a>
+            <a href="../contact.html" class="lp-cta-btn primary">無料でお見積り<small>24時間以内に返信</small></a>
             <a href="https://lin.ee/IT7L1Jd" target="_blank" rel="noopener" class="lp-cta-btn secondary">LINEで相談<small>お気軽にどうぞ</small></a>
         </div>
     </section>
@@ -1792,17 +1814,19 @@
     <!-- Footer -->
     <footer class="lp-footer">
         <p>
-            <a href="index.html">ホームページ</a>
-            <a href="workshop.html">ワークショップ詳細</a>
-            <a href="gallery.html">ギャラリー</a>
-            <a href="blog.html">ブログ</a>
+            <a href="../index.html">ホームページ</a>
+            <a href="../workshop.html">ワークショップ詳細</a>
+            <a href="../gallery.html">ギャラリー</a>
+            <a href="../blog.html">ブログ</a>
         </p>
         <p style="margin-top: 20px;">&copy; 2024 nicolon</p>
     </footer>
 
     <!-- Mobile Sticky CTA -->
     <div class="lp-sticky-cta">
-        <a href="contact.html">無料でお見積り →</a>
+        <a href="../contact.html">無料でお見積り →</a>
     </div>
+
+    <script src="../script.js"></script>
 </body>
 </html>
