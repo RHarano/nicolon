@@ -6687,3 +6687,91 @@ button:focus-visible {
         max-width: 260px;
     }
 }
+
+/* ================================
+   Step Cards - ステップ型カード
+   ================================ */
+.step-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.step-card {
+    background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%);
+    border-radius: 16px;
+    padding: 1.5rem;
+    position: relative;
+    border-left: 4px solid var(--sand-pink, #FF8DA1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step-card:nth-child(2) {
+    border-left-color: var(--sand-orange, #FFB347);
+}
+
+.step-card:nth-child(3) {
+    border-left-color: var(--sand-green, #98D8AA);
+}
+
+.step-card:nth-child(4) {
+    border-left-color: var(--sand-blue, #87CEEB);
+}
+
+.step-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    display: inline-block;
+    background: var(--gradient-warm, linear-gradient(135deg, #FF8DA1 0%, #FFB347 100%));
+    color: #fff;
+    font-family: var(--font-display, 'Quicksand', sans-serif);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.step-card:nth-child(2) .step-number {
+    background: linear-gradient(135deg, #FFB347 0%, #F0E68C 100%);
+}
+
+.step-card:nth-child(3) .step-number {
+    background: linear-gradient(135deg, #98D8AA 0%, #87CEEB 100%);
+}
+
+.step-card:nth-child(4) .step-number {
+    background: linear-gradient(135deg, #87CEEB 0%, #DDA0DD 100%);
+}
+
+.step-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-gray-800, #333);
+    margin-bottom: 0.5rem;
+}
+
+.step-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--color-gray-600, #666);
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .step-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+    
+    .step-card {
+        padding: 1.75rem;
+    }
+}
