@@ -3,356 +3,518 @@
   <!-- Main Pages -->
   <url>
     <loc>https://nicosand.com/</loc>
-    <lastmod>2025-12-30</lastmod>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/about.html</loc>
-    <lastmod>2025-12-30</lastmod>
+    <loc>https://nicosand.com/about/</loc>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/workshop.html</loc>
-    <lastmod>2025-12-30</lastmod>
+    <loc>https://nicosand.com/workshop/</loc>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/course.html</loc>
-    <lastmod>2025-12-30</lastmod>
+    <loc>https://nicosand.com/course/</loc>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/gallery.html</loc>
-    <lastmod>2025-12-30</lastmod>
+    <loc>https://nicosand.com/gallery/</loc>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/order.html</loc>
-    <lastmod>2025-12-30</lastmod>
+    <loc>https://nicosand.com/order/</loc>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/contact.html</loc>
-    <lastmod>2025-12-30</lastmod>
+    <loc>https://nicosand.com/contact/</loc>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/artist.html</loc>
-    <lastmod>2025-12-30</lastmod>
+    <loc>https://nicosand.com/artist/</loc>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/therapist.html</loc>
-    <lastmod>2025-12-30</lastmod>
+    <loc>https://nicosand.com/therapist/</loc>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog.html</loc>
-    <lastmod>2025-12-30</lastmod>
+    <loc>https://nicosand.com/blog/</loc>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://nicosand.com/event/</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/voice.html</loc>
-    <lastmod>2026-01-23</lastmod>
+    <loc>https://nicosand.com/voice/</loc>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog Articles -->
+  <!-- Blog Articles - New (2026-02) -->
   <url>
-    <loc>https://nicosand.com/blog/shopping-mall-event.html</loc>
+    <loc>https://nicosand.com/blog/seasonal-event-sandart/</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/birthday-party-activity/</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/kanreki-celebration/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/taishoku-gift/</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sotsuen-handmade/</loc>
+    <lastmod>2026-02-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/hattatsu-kankaku-asobi/</loc>
+    <lastmod>2026-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/shuuchuuryoku-naraigoto/</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/gokan-asobi/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/steam-art-education/</loc>
+    <lastmod>2026-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Articles - Recent (2026-01) -->
+  <url>
+    <loc>https://nicosand.com/blog/iyaiyaki-norikoeru/</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/kyoudai-genka-herasu/</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/kodomo-shuuchuuryoku/</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/jiko-kouteikan-sodateru/</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sumaho-ikuji-datsukyaku/</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/shopping-mall-event/</loc>
     <lastmod>2026-01-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/pta-school-event.html</loc>
+    <loc>https://nicosand.com/blog/pta-school-event/</loc>
     <lastmod>2026-01-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/fukuoka-weekend-kids.html</loc>
+    <loc>https://nicosand.com/blog/natsuyasumi-ouchi-jikan/</loc>
     <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/amenohi-sugoshikata/</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sofubo-sansedai-kouryu/</loc>
+    <lastmod>2026-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/hattatsu-kininaru-ko/</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/fukuoka-weekend-kids/</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/sandart-taniku-workshop.html</loc>
+    <loc>https://nicosand.com/blog/kodomo-suki-nobasu/</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/shokkaku-iyashi/</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/okurimono-sandart/</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/matsu-tanoshimu/</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sandart-taniku-workshop/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/kosodate-shindoi-sandart.html</loc>
+    <loc>https://nicosand.com/blog/kosodate-shindoi-sandart/</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/ikuji-app-osusume.html</loc>
+    <loc>https://nicosand.com/blog/ikuji-app-osusume/</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/web-seisaku-likanon.html</loc>
+    <loc>https://nicosand.com/blog/web-seisaku-likanon/</loc>
     <lastmod>2026-01-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/shine-rawsweets.html</loc>
+    <loc>https://nicosand.com/blog/shine-rawsweets/</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/kosodate-web-shigoto.html</loc>
+    <loc>https://nicosand.com/blog/kosodate-web-shigoto/</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/family-taiken.html</loc>
+    <loc>https://nicosand.com/blog/family-taiken/</loc>
     <lastmod>2026-01-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/mama-work.html</loc>
+    <loc>https://nicosand.com/blog/mama-work/</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/shisyu-collab.html</loc>
+    <loc>https://nicosand.com/blog/shisyu-collab/</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/jutakutenjijo-shukaku.html</loc>
+    <loc>https://nicosand.com/blog/jutakutenjijo-shukaku/</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog Articles - 2025-12 -->
   <url>
-    <loc>https://nicosand.com/blog/keirokai-sandart.html</loc>
+    <loc>https://nicosand.com/blog/keirokai-sandart/</loc>
     <lastmod>2025-12-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/hoikuen-youchien-event.html</loc>
+    <loc>https://nicosand.com/blog/hoikuen-youchien-event/</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/shaonkai-workshop.html</loc>
+    <loc>https://nicosand.com/blog/shaonkai-workshop/</loc>
     <lastmod>2025-12-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/kodomokai-gakudo-fukuoka.html</loc>
+    <loc>https://nicosand.com/blog/kodomokai-gakudo-fukuoka/</loc>
     <lastmod>2025-12-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/basic-course.html</loc>
+    <loc>https://nicosand.com/blog/basic-course/</loc>
     <lastmod>2025-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/sandart-fukuoka.html</loc>
+    <loc>https://nicosand.com/blog/sandart-fukuoka/</loc>
     <lastmod>2025-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/event-kikaku.html</loc>
+    <loc>https://nicosand.com/blog/event-kikaku/</loc>
     <lastmod>2025-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/smile-course.html</loc>
+    <loc>https://nicosand.com/blog/smile-course/</loc>
     <lastmod>2025-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/mama-shigoto-hajimekata.html</loc>
+    <loc>https://nicosand.com/blog/mama-shigoto-hajimekata/</loc>
     <lastmod>2025-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/marche-shutten-hajimekata.html</loc>
+    <loc>https://nicosand.com/blog/marche-shutten-hajimekata/</loc>
     <lastmod>2025-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/teambuilding-workshop.html</loc>
+    <loc>https://nicosand.com/blog/teambuilding-workshop/</loc>
     <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/wedding-sandart.html</loc>
+    <loc>https://nicosand.com/blog/wedding-sandart/</loc>
     <lastmod>2025-12-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/sandart-shutcho-workshop.html</loc>
+    <loc>https://nicosand.com/blog/sandart-shutcho-workshop/</loc>
     <lastmod>2025-12-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/therapist-1day.html</loc>
+    <loc>https://nicosand.com/blog/therapist-1day/</loc>
     <lastmod>2025-12-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/jidoukan-kosodate-shien.html</loc>
+    <loc>https://nicosand.com/blog/jidoukan-kosodate-shien/</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/kaigo-rec.html</loc>
+    <loc>https://nicosand.com/blog/kaigo-rec/</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/senior-sandart.html</loc>
+    <loc>https://nicosand.com/blog/senior-sandart/</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/soukakoubo-event.html</loc>
+    <loc>https://nicosand.com/blog/soukakoubo-event/</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/rainbow-marche-event.html</loc>
+    <loc>https://nicosand.com/blog/rainbow-marche-event/</loc>
     <lastmod>2025-12-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/taiken-event.html</loc>
+    <loc>https://nicosand.com/blog/taiken-event/</loc>
     <lastmod>2025-12-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/kosodate-aruaru.html</loc>
+    <loc>https://nicosand.com/blog/kosodate-aruaru/</loc>
     <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/corporate-event.html</loc>
+    <loc>https://nicosand.com/blog/corporate-event/</loc>
     <lastmod>2025-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/mama-mitete.html</loc>
+    <loc>https://nicosand.com/blog/mama-mitete/</loc>
     <lastmod>2025-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/newyear-sandart.html</loc>
+    <loc>https://nicosand.com/blog/newyear-sandart/</loc>
     <lastmod>2025-12-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/sandart-miryoku.html</loc>
+    <loc>https://nicosand.com/blog/sandart-miryoku/</loc>
     <lastmod>2025-12-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/online-lesson-fuan.html</loc>
+    <loc>https://nicosand.com/blog/online-lesson-fuan/</loc>
     <lastmod>2025-12-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/instagram-story.html</loc>
+    <loc>https://nicosand.com/blog/instagram-story/</loc>
     <lastmod>2025-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/rainbow-gift.html</loc>
+    <loc>https://nicosand.com/blog/rainbow-gift/</loc>
     <lastmod>2025-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/shigoto-iyashi.html</loc>
+    <loc>https://nicosand.com/blog/shigoto-iyashi/</loc>
     <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/rainbow-lesson.html</loc>
+    <loc>https://nicosand.com/blog/rainbow-lesson/</loc>
     <lastmod>2025-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/mama-sandart.html</loc>
+    <loc>https://nicosand.com/blog/mama-sandart/</loc>
     <lastmod>2025-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/sandart-hajimekata.html</loc>
+    <loc>https://nicosand.com/blog/sandart-hajimekata/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/workshop-report-202411.html</loc>
+    <loc>https://nicosand.com/blog/sandart-taiken/</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sandart-iro-to-kokoro/</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sandart-shippai-nante-nai/</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sandart-shizukana-jikan/</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Articles - 2025-11 -->
+  <url>
+    <loc>https://nicosand.com/blog/workshop-report-202411/</loc>
     <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://nicosand.com/blog/order-gift-idea.html</loc>
+    <loc>https://nicosand.com/blog/order-gift-idea/</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
