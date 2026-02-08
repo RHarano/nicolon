@@ -42,6 +42,10 @@
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://nicosand.com/blog/sandart-shigoto-merit/"
+        },
         "headline": "サンドアートを仕事にする5つのメリット｜副業から始める方法",
         "image": "https://nicosand.com/img/IMG_3354.webp",
         "datePublished": "2026-02-08",
@@ -49,7 +53,9 @@
         "author": {
             "@type": "Person",
             "name": "原野玲未",
-            "url": "https://nicosand.com/"
+            "url": "https://nicosand.com/",
+            "jobTitle": ["サンドアート講師", "Webエンジニア"],
+            "description": "5児の母。日本サンドアート協会認定講師。Webエンジニアとしても活動しながら、サンドアートの魅力を全国に届けている。"
         },
         "publisher": {
             "@type": "Organization",
@@ -97,45 +103,63 @@
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://nicosand.com/"},
-            {"@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://nicosand.com/blog/"},
-            {"@type": "ListItem", "position": 3, "name": "サンドアートを仕事にするメリット"}
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ホーム",
+                "item": "https://nicosand.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "ブログ",
+                "item": "https://nicosand.com/blog/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "サンドアートを仕事にするメリット"
+            }
         ]
     }
     </script>
 
     <link rel="canonical" href="https://nicosand.com/blog/sandart-shigoto-merit/">
-    <link rel="alternate" hreflang="ja" href="https://nicosand.com/blog/sandart-shigoto-merit/">
-    <link rel="icon" href="../../img/favicon.ico">
-    <link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/blog.css">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
     <!-- ヘッダー -->
-    <header class="header">
-        <div class="container">
-            <a href="../../" class="header-logo">
-                <img src="../../img/logo.svg" alt="nicolon" width="120" height="40">
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="../../" class="logo">
+                <img src="../../img/logo.svg" alt="nicolon sand art" class="logo-img" width="140" height="50">
             </a>
-            <button class="hamburger" aria-label="メニュー" aria-expanded="false">
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="../../" class="nav-link"><span class="nav-en">HOME</span><span class="nav-ja">ホーム</span></a></li>
+                    <li><a href="../../#about" class="nav-link"><span class="nav-en">ABOUT</span><span class="nav-ja">私について</span></a></li>
+                    <li><a href="../../#workshop" class="nav-link"><span class="nav-en">WORKSHOP</span><span class="nav-ja">ワークショップ</span></a></li>
+                    <li><a href="../../#course" class="nav-link"><span class="nav-en">COURSE</span><span class="nav-ja">講座</span></a></li>
+                    <li><a href="../../#gallery" class="nav-link"><span class="nav-en">GALLERY</span><span class="nav-ja">ギャラリー</span></a></li>
+                    <li><a href="../../order/" class="nav-link"><span class="nav-en">ORDER</span><span class="nav-ja">オーダー</span></a></li>
+                    <li><a href="../" class="nav-link"><span class="nav-en">BLOG</span><span class="nav-ja">ブログ</span></a></li>
+                    <li><a href="../../voice/" class="nav-link"><span class="nav-en">VOICE</span><span class="nav-ja">お客様の声</span></a></li>
+                    <li><a href="../../#contact" class="nav-link nav-link-cta"><span class="nav-en">CONTACT</span><span class="nav-ja">お問い合わせ</span></a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="../../" class="nav-link"><span class="nav-en">HOME</span><span class="nav-ja">ホーム</span></a></li>
-                    <li><a href="../../about/" class="nav-link"><span class="nav-en">ABOUT</span><span class="nav-ja">nicolonについて</span></a></li>
-                    <li><a href="../../workshop/" class="nav-link"><span class="nav-en">WORKSHOP</span><span class="nav-ja">ワークショップ</span></a></li>
-                    <li><a href="../../course/" class="nav-link"><span class="nav-en">COURSE</span><span class="nav-ja">講座</span></a></li>
-                    <li><a href="../../gallery/" class="nav-link"><span class="nav-en">GALLERY</span><span class="nav-ja">ギャラリー</span></a></li>
-                    <li><a href="../../order/" class="nav-link"><span class="nav-en">ORDER</span><span class="nav-ja">オーダー</span></a></li>
-                    <li><a href="../../voice/" class="nav-link"><span class="nav-en">VOICE</span><span class="nav-ja">お客様の声</span></a></li>
-                    <li><a href="../" class="nav-link"><span class="nav-en">BLOG</span><span class="nav-ja">ブログ</span></a></li>
-                    <li><a href="../../contact/" class="nav-link nav-contact"><span class="nav-en">CONTACT</span><span class="nav-ja">お問い合わせ</span></a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
@@ -143,21 +167,24 @@
     <nav class="breadcrumb" aria-label="パンくずリスト">
         <div class="container">
             <ol class="breadcrumb-list">
-                <li><a href="../../">ホーム</a></li>
-                <li><a href="../">ブログ</a></li>
-                <li aria-current="page">サンドアートを仕事にするメリット</li>
+                <li class="breadcrumb-item"><a href="../../">ホーム</a></li>
+                <li class="breadcrumb-item"><a href="../">ブログ</a></li>
+                <li class="breadcrumb-item current" aria-current="page">サンドアートを仕事にするメリット</li>
             </ol>
         </div>
     </nav>
 
     <!-- 記事ヘッダー -->
-    <section class="blog-post-header">
+    <section class="blog-post-hero">
         <div class="container">
             <div class="blog-post-meta">
-                <span class="blog-post-category">レッスン</span>
-                <time class="blog-post-date" datetime="2026-02-08">2026.02.08</time>
+                <a href="../" class="blog-back-link">← ブログ一覧</a>
             </div>
-            <h1 class="blog-post-title">サンドアートを仕事にする5つのメリット｜副業から始める方法</h1>
+            <h1 class="blog-post-title">サンドアートを仕事にする5つのメリット<br>副業から始める方法</h1>
+            <div class="blog-post-date-category">
+                <time class="blog-post-date" datetime="2026-02-08">2026年2月8日</time>
+                <span class="blog-post-category">レッスン</span>
+            </div>
         </div>
     </section>
 
@@ -171,19 +198,7 @@
             <div class="blog-post-body">
                 <p class="lead">「好きなことを仕事にしたい」「副業を始めたいけど何がいいかわからない」——そんな方に、<strong>サンドアートを仕事にする</strong>という選択肢をご紹介します。低コストで始められ、自分のペースで活動できるサンドアートの魅力をお伝えします。</p>
 
-                <div class="toc">
-                    <h2>目次</h2>
-                    <ol>
-                        <li><a href="#section1">サンドアートを仕事にする5つのメリット</a></li>
-                        <li><a href="#section2">具体的な活動の仕方</a></li>
-                        <li><a href="#section3">副業から始める方法</a></li>
-                        <li><a href="#section4">収入の目安</a></li>
-                        <li><a href="#section5">よくある質問</a></li>
-                        <li><a href="#section6">始め方のご案内</a></li>
-                    </ol>
-                </div>
-
-                <h2 id="section1">サンドアートを仕事にする5つのメリット</h2>
+                <h2>サンドアートを仕事にする5つのメリット</h2>
 
                 <h3>1. 低コストで始められる</h3>
                 <p>高価な機材や設備は不要です。<strong>砂、瓶、スプーンがあれば始められる</strong>ので、初期投資を抑えてスタートできます。在庫リスクも少なく、失敗しにくいビジネスモデルです。</p>
@@ -200,20 +215,18 @@
                 <h3>5. 年齢を重ねても続けられる</h3>
                 <p>肉体労働ではないので、<strong>長く続けられる</strong>仕事です。むしろ経験や人柄が活きる仕事なので、年齢を重ねるほど信頼されやすくなります。</p>
 
-                <h2 id="section2">具体的な活動の仕方</h2>
+                <h2>具体的な活動の仕方</h2>
 
-                <div class="info-box">
-                    <h4>サンドアート講師の主な活動場所</h4>
-                    <ul>
-                        <li><strong>マルシェ・イベント出店</strong>：ハンドメイドマルシェ、地域イベントなど</li>
-                        <li><strong>出張ワークショップ</strong>：子供会、PTAイベント、老人ホームなど</li>
-                        <li><strong>カルチャースクール講師</strong>：カルチャーセンター、公民館など</li>
-                        <li><strong>企業イベント</strong>：社内イベント、顧客感謝祭など</li>
-                        <li><strong>オンラインレッスン</strong>：全国どこからでも受講可能</li>
-                    </ul>
-                </div>
+                <p><strong>サンドアート講師の主な活動場所</strong></p>
+                <ul>
+                    <li><strong>マルシェ・イベント出店</strong>：ハンドメイドマルシェ、地域イベントなど</li>
+                    <li><strong>出張ワークショップ</strong>：子供会、PTAイベント、老人ホームなど</li>
+                    <li><strong>カルチャースクール講師</strong>：カルチャーセンター、公民館など</li>
+                    <li><strong>企業イベント</strong>：社内イベント、顧客感謝祭など</li>
+                    <li><strong>オンラインレッスン</strong>：全国どこからでも受講可能</li>
+                </ul>
 
-                <h2 id="section3">副業から始める方法</h2>
+                <h2>副業から始める方法</h2>
 
                 <p>いきなり本業にするのは不安という方は、<strong>副業から始める</strong>のがおすすめです。</p>
 
@@ -226,54 +239,73 @@
                 <h3>ステップ3：徐々に活動を広げる</h3>
                 <p>経験を積みながら、出店場所や開催回数を増やしていきます。軌道に乗ってきたら本業への転換も視野に。</p>
 
-                <h2 id="section4">収入の目安</h2>
+                <h2>収入の目安</h2>
 
-                <div class="info-box">
-                    <h4>活動頻度別の収入目安</h4>
-                    <ul>
-                        <li><strong>月1〜2回の活動</strong>：2〜5万円</li>
-                        <li><strong>月4〜6回の活動</strong>：5〜10万円</li>
-                        <li><strong>本業として活動</strong>：15〜30万円以上</li>
-                    </ul>
-                    <p>※出店料、材料費等を差し引いた目安です</p>
-                </div>
+                <p><strong>活動頻度別の収入目安</strong></p>
+                <ul>
+                    <li><strong>月1〜2回の活動</strong>：2〜5万円</li>
+                    <li><strong>月4〜6回の活動</strong>：5〜10万円</li>
+                    <li><strong>本業として活動</strong>：15〜30万円以上</li>
+                </ul>
+                <p>※出店料、材料費等を差し引いた目安です</p>
 
-                <h2 id="section5">よくある質問</h2>
+                <h2>よくある質問</h2>
 
-                <div class="faq-section">
-                    <div class="faq-item">
-                        <h3 class="faq-question">Q. 本当に稼げるようになりますか？</h3>
-                        <p class="faq-answer">A. 活動量や工夫次第です。コツコツ続ければ、着実に収入を得られるようになります。大切なのは継続することです。</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">Q. 最初から仕事にするのは難しいですか？</h3>
-                        <p class="faq-answer">A. まずは副業として小さく始めることをおすすめします。リスクを抑えながら経験を積み、自信がついてから本業にするのがおすすめです。</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">Q. 競合が多くて不安です</h3>
-                        <p class="faq-answer">A. サンドアート講師はまだまだ少なく、需要に対して供給が追いついていません。自分の活動エリアでは「唯一の講師」になれる可能性も高いです。</p>
-                    </div>
-                </div>
+                <h3>Q. 本当に稼げるようになりますか？</h3>
+                <p>A. 活動量や工夫次第です。コツコツ続ければ、着実に収入を得られるようになります。大切なのは継続することです。</p>
 
-                <h2 id="section6">始め方のご案内</h2>
+                <h3>Q. 最初から仕事にするのは難しいですか？</h3>
+                <p>A. まずは副業として小さく始めることをおすすめします。リスクを抑えながら経験を積み、自信がついてから本業にするのがおすすめです。</p>
+
+                <h3>Q. 競合が多くて不安です</h3>
+                <p>A. サンドアート講師はまだまだ少なく、需要に対して供給が追いついていません。自分の活動エリアでは「唯一の講師」になれる可能性も高いです。</p>
+
+                <h2>始め方のご案内</h2>
 
                 <p>サンドアートを仕事にしたい方は、まずセラピストコースを受講してください。<strong>1日でワークショップ講師の資格が取得</strong>でき、翌日から活動を始められます。</p>
 
-                <div class="blog-cta">
+                <div class="blog-cta-box">
+                    <h3>セラピストコースのご相談・お申し込み</h3>
                     <p>好きなことを仕事に。まずは一歩を踏み出してみませんか？</p>
-                    <a href="../../therapist/" class="btn btn-primary">セラピストコースを見る</a>
-                    <a href="../../contact/" class="btn btn-outline">お問い合わせ</a>
+                    <div class="blog-cta-buttons">
+                        <a href="https://lin.ee/IT7L1Jd" target="_blank" rel="noopener" class="btn btn-line">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right: 8px;">
+                                <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                            </svg>
+                            LINEで相談する
+                        </a>
+                        <a href="../../therapist/" class="btn btn-outline">セラピストコース詳細はこちら</a>
+                    </div>
                 </div>
             </div>
 
             <!-- 著者情報 -->
-            <div class="blog-author">
-                <div class="author-content">
-                    <img src="../../img/IMG_9770.webp" alt="原野玲未" class="author-image" loading="lazy">
-                    <div class="author-info">
-                        <p class="author-name">原野 玲未（はらの れいみ）</p>
-                        <p class="author-title">nicolon サンドアート講師 / Webエンジニア</p>
-                        <p class="author-bio">福岡県在住、5児の母。日本サンドアート協会認定講師として、全国でワークショップや講座を開催。「誰でも簡単に美しい作品が作れる」をモットーに活動中。</p>
+            <div class="blog-instructor">
+                <div class="instructor-content">
+                    <div class="instructor-image">
+                        <div class="instructor-image-wrapper">
+                            <img src="../../img/IMG_9770.webp" alt="原野玲未" class="instructor-photo" loading="lazy">
+                            <div class="instructor-decoration"></div>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <span class="section-label">Instructor</span>
+                        <h3 class="instructor-name">原野 玲未<span class="name-reading">REMI HARANO</span></h3>
+                        <p class="instructor-title">日本サンドアート協会 認定講師</p>
+                        <p class="instructor-bio">福岡県在住、5児の母。Webエンジニアとしても活動しながら、サンドアートの魅力を全国に届けています。</p>
+                        <p class="instructor-bio">「誰でも簡単に、美しい作品が作れる」をモットーに、オンライン・対面の両方でレッスンを提供中。お気軽にご相談ください。</p>
+                        <div class="instructor-social">
+                            <a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://lin.ee/IT7L1Jd" target="_blank" rel="noopener" aria-label="LINE">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -315,52 +347,127 @@
         </div>
     </article>
 
+    <!-- CTA -->
+    <section class="section blog-cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2>セラピストコースで新しい一歩を</h2>
+                <p>1日で取得できて、自分のペースで活動できる<br>サンドアート講師という働き方</p>
+                <div class="cta-buttons">
+                    <a href="../../therapist/" class="btn btn-primary">
+                        <span>セラピストコースを見る</span>
+                    </a>
+                    <a href="../../#contact" class="btn btn-outline">
+                        <span>お問い合わせ</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- フッター -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="../../img/logo.svg" alt="nicolon" width="120" height="40">
-                    <p>砂で関わる全ての人を笑顔に</p>
+                <div class="footer-brand">
+                    <a href="../../" class="footer-logo">
+                        <img src="../../img/logo-white.svg" alt="nicolon sand art" class="footer-logo-img" width="140" height="50">
+                    </a>
+                    <p class="footer-tagline">色とりどりの砂を重ねる手。生まれる世界にひとつの作品。届く笑顔と感動。そのすべてが、物語になる</p>
                 </div>
+
                 <nav class="footer-nav">
-                    <div class="footer-nav-column">
-                        <h4>メニュー</h4>
+                    <div class="footer-nav-group">
+                        <h4>Menu</h4>
                         <ul>
-                            <li><a href="../../about/">nicolonについて</a></li>
-                            <li><a href="../../workshop/">ワークショップ</a></li>
-                            <li><a href="../../course/">講座案内</a></li>
-                            <li><a href="../../gallery/">ギャラリー</a></li>
+                            <li><a href="../../">HOME</a></li>
+                            <li><a href="../../#about">ABOUT</a></li>
+                            <li><a href="../../#workshop">WORKSHOP</a></li>
+                            <li><a href="../../#course">COURSE</a></li>
                         </ul>
                     </div>
-                    <div class="footer-nav-column">
-                        <h4>サービス</h4>
+                    <div class="footer-nav-group">
+                        <h4>Course</h4>
                         <ul>
                             <li><a href="../../artist/">アーティストコース</a></li>
                             <li><a href="../../therapist/">セラピストコース</a></li>
                             <li><a href="../../order/">オーダーメイド</a></li>
                         </ul>
                     </div>
-                    <div class="footer-nav-column">
-                        <h4>お問い合わせ</h4>
+                    <div class="footer-nav-group">
+                        <h4>Contact</h4>
                         <ul>
-                            <li><a href="../../contact/">お問い合わせフォーム</a></li>
-                            <li><a href="https://lin.ee/yourline" target="_blank" rel="noopener">LINE公式アカウント</a></li>
+                            <li><a href="mailto:nicolon@nicosand.com">メール</a></li>
+                            <li><a href="https://lin.ee/IT7L1Jd" target="_blank" rel="noopener">LINE</a></li>
                             <li><a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener">Instagram</a></li>
                         </ul>
                     </div>
                 </nav>
+
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://lin.ee/IT7L1Jd" target="_blank" rel="noopener" aria-label="LINE">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 nicolon. All Rights Reserved.</p>
-                <ul class="footer-links">
-                    <li><a href="../../privacy/">プライバシーポリシー</a></li>
-                    <li><a href="../../tokushoho/">特定商取引法に基づく表記</a></li>
-                </ul>
+                <p class="copyright">&copy; 2024 nicolon - 日本サンドアート協会. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../../js/script.js"></script>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="ページトップに戻る">
+        <div class="nico-face">
+            <div class="nico-arrow"></div>
+            <div class="nico-eye left"></div>
+            <div class="nico-eye right"></div>
+            <div class="nico-smile"></div>
+        </div>
+    </button>
+
+    <!-- SP用固定下部ナビゲーション -->
+    <nav class="mobile-bottom-nav" aria-label="モバイルナビゲーション">
+        <a href="../../#contact" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <span>お問い合わせ</span>
+        </a>
+        <a href="../../#workshop" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <span>イベント</span>
+        </a>
+        <a href="../" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+            <span>ブログ</span>
+        </a>
+        <a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>インスタ</span>
+        </a>
+    </nav>
+
+    <script src="../../script.js"></script>
 </body>
 </html>
