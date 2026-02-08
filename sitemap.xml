@@ -76,6 +76,24 @@
 
   <!-- Blog Articles - New (2026-02) -->
   <url>
+    <loc>https://nicosand.com/blog/mikkei-kara-koushi/</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sandart-shigoto-merit/</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/shikaku-nayami/</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nicosand.com/blog/seasonal-event-sandart/</loc>
     <lastmod>2026-02-06</lastmod>
     <changefreq>monthly</changefreq>
