@@ -74,6 +74,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Articles - New (2026-03) -->
+  <url>
+    <loc>https://nicosand.com/blog/fukuoka-gw-spring-kids/</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog Articles - New (2026-02) -->
   <url>
     <loc>https://nicosand.com/blog/mikkei-kara-koushi/</loc>
