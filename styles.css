@@ -2761,12 +2761,14 @@ button:focus-visible {
     font-weight: 700;
     color: var(--sand-pink);
     margin-bottom: var(--space-sm);
+    white-space: nowrap;
 }
 
 .course-card-price small {
-    font-size: 0.875rem;
+    font-size: 0.7rem;
     font-weight: 400;
     color: var(--color-gray-600);
+    white-space: nowrap;
 }
 
 .course-card-description {
