@@ -74,6 +74,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Articles - Newest (2026-04-25) -->
+  <url>
+    <loc>https://nicosand.com/blog/otona-online-sandart/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog Articles - Late 2026-04 -->
   <url>
     <loc>https://nicosand.com/blog/kaigo-reku-sandart-idea/</loc>
