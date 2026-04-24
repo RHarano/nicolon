@@ -6987,7 +6987,8 @@ button:focus-visible {
 @media (max-width: 768px) {
     .floating-line-btn {
         bottom: 80px;
-        right: 16px;
+        left: 16px;
+        right: auto;
         padding: 10px 16px;
         font-size: 0.875rem;
     }
@@ -6995,6 +6996,13 @@ button:focus-visible {
     .floating-line-btn svg {
         width: 20px;
         height: 20px;
+    }
+
+    .back-to-top {
+        bottom: 80px;
+        right: 16px;
+        width: 48px;
+        height: 48px;
     }
 }
 
