@@ -1921,7 +1921,7 @@ button {
    Contact Section
    -------------------------------- */
 .contact {
-    background: linear-gradient(135deg, #9B86B0 0%, #B39CC8 50%, #C9A4D4 100%);
+    background: linear-gradient(135deg, #4A3936 0%, #5C4A3E 50%, #3D2E2C 100%);
     color: var(--color-white);
     position: relative;
     overflow: hidden;
@@ -2025,7 +2025,7 @@ button {
    Footer
    -------------------------------- */
 .footer {
-    background: linear-gradient(135deg, #8B7AA0 0%, #A492C0 50%, #B8A5D4 100%);
+    background: linear-gradient(135deg, #3D2E2C 0%, #4A3936 50%, #2E2220 100%);
     color: var(--color-white);
     padding: var(--space-2xl) 0 var(--space-lg);
 }
