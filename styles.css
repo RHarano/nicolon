@@ -1921,7 +1921,7 @@ button {
    Contact Section
    -------------------------------- */
 .contact {
-    background: var(--color-dark);
+    background: linear-gradient(135deg, #9B86B0 0%, #B39CC8 50%, #C9A4D4 100%);
     color: var(--color-white);
     position: relative;
     overflow: hidden;
@@ -2025,7 +2025,7 @@ button {
    Footer
    -------------------------------- */
 .footer {
-    background: #0D0D1A;
+    background: linear-gradient(135deg, #8B7AA0 0%, #A492C0 50%, #B8A5D4 100%);
     color: var(--color-white);
     padding: var(--space-2xl) 0 var(--space-lg);
 }
@@ -6996,4 +6996,147 @@ button:focus-visible {
         width: 20px;
         height: 20px;
     }
+}
+
+/* ================================
+   Contact Form (FormSubmit)
+   ================================ */
+.contact-form-section {
+    background: linear-gradient(135deg, #FFF9F0 0%, #FFF0E6 50%, #F0F8FF 100%);
+    padding: var(--space-3xl) 0;
+}
+
+.contact-form-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--color-white);
+    padding: var(--space-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 10px 40px rgba(255, 141, 161, 0.15);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+}
+
+@media (max-width: 640px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-wrapper {
+        padding: var(--space-lg);
+        margin: 0 var(--space-md);
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-gray-800);
+}
+
+.form-label .required {
+    color: var(--sand-coral);
+    margin-left: 2px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--color-gray-800);
+    background: var(--color-gray-100);
+    border: 2px solid transparent;
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    background: var(--color-white);
+    border-color: var(--sand-pink);
+    box-shadow: 0 0 0 4px rgba(255, 141, 161, 0.15);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--color-gray-300);
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-note {
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+}
+
+.form-note .required {
+    color: var(--sand-coral);
+}
+
+.form-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: 1rem 2.5rem;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: var(--color-white);
+    background: var(--gradient-warm);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    align-self: center;
+    min-width: 220px;
+}
+
+.form-submit-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    fill: none;
+}
+
+.form-submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 141, 161, 0.4);
+}
+
+.form-submit-btn:active {
+    transform: translateY(-1px);
 }

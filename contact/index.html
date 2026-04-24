@@ -23,7 +23,7 @@
     </script>
 
     <title>お問い合わせ｜nicolon サンドアート</title>
-    <meta name="description" content="nicolonへのお問い合わせ。ワークショップのご依頼・レッスンのご相談など、お気軽にご連絡ください。メール、LINE、Instagram DMでお問い合わせいただけます。">
+    <meta name="description" content="nicolonへのお問い合わせ。ワークショップのご依頼・レッスンのご相談など、フォーム・LINE・Instagram DMでお気軽にご連絡ください。">
     <meta name="keywords" content="nicolon 問い合わせ,サンドアート 依頼,ワークショップ 依頼,サンドアート レッスン 申し込み,出張ワークショップ 依頼,福岡 サンドアート 予約">
 
     <meta property="og:title" content="お問い合わせ｜nicolon サンドアート">
@@ -127,30 +127,103 @@
         </div>
     </section>
 
+    <!-- お問い合わせフォーム -->
+    <section class="section contact-form-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-badge">Contact Form</span>
+                <h2 class="section-title">お問い合わせフォーム</h2>
+                <p class="section-description">
+                    下記フォームに必要事項をご記入の上、送信してください。<br class="pc-only">通常2営業日以内にご返信いたします。
+                </p>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form action="https://formsubmit.co/nicolon@nicosand.com" method="POST" class="contact-form">
+                    <!-- FormSubmit設定 -->
+                    <input type="hidden" name="_subject" value="【nicolon公式サイト】お問い合わせ">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_next" value="https://nicosand.com/contact/thanks/">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="form-label">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="お名前" class="form-input" required placeholder="山田 花子">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="メールアドレス" class="form-input" required placeholder="example@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone" class="form-label">電話番号</label>
+                            <input type="tel" id="phone" name="電話番号" class="form-input" placeholder="090-1234-5678">
+                        </div>
+                        <div class="form-group">
+                            <label for="category" class="form-label">お問い合わせ種別 <span class="required">*</span></label>
+                            <select id="category" name="お問い合わせ種別" class="form-select" required>
+                                <option value="">選択してください</option>
+                                <option value="ワークショップ・イベント依頼">ワークショップ・イベント依頼</option>
+                                <option value="レッスン・講座について">レッスン・講座について</option>
+                                <option value="オンライン体験">オンライン体験</option>
+                                <option value="オーダーメイド作品">オーダーメイド作品</option>
+                                <option value="介護・福祉施設向け">介護・福祉施設向け</option>
+                                <option value="学校・PTA向け">学校・PTA向け</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" class="form-label">ご希望の日程（イベント・レッスンの場合）</label>
+                        <input type="text" id="date" name="希望日程" class="form-input" placeholder="例：2026年5月中旬 / 土日希望 / 未定">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">お問い合わせ内容 <span class="required">*</span></label>
+                        <textarea id="message" name="メッセージ" class="form-textarea" rows="6" required placeholder="イベントの規模、参加人数、ご予算、ご質問などお気軽にお書きください"></textarea>
+                    </div>
+
+                    <div class="form-note">
+                        <p><span class="required">*</span> は必須項目です</p>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">
+                        <span>送信する</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- その他の連絡方法 -->
     <section class="section contact" id="contact">
-        <div class="contact-bg">
-            <div class="contact-particles" id="contact-particles"></div>
-        </div>
         <div class="container">
             <div class="section-header center">
                 <span class="section-badge">Other Ways</span>
                 <h2 class="section-title">その他のご連絡方法</h2>
                 <p class="section-description animate-slide-in delay-2">
-                    メール・Instagram DMでも<br class="pc-only">お気軽にご連絡いただけます
+                    LINE・Instagram DMでも<br class="pc-only">お気軽にご連絡いただけます
                 </p>
             </div>
 
             <div class="contact-methods contact-methods-small">
-                <a href="mailto:nicolon@nicosand.com" class="contact-card animate-card" style="--delay: 0;">
-                    <div class="contact-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
+                <a href="https://lin.ee/IT7L1Jd" target="_blank" rel="noopener" class="contact-card animate-card" style="--delay: 0;">
+                    <div class="contact-icon line">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
                         </svg>
                     </div>
-                    <h3 class="contact-title">メール</h3>
-                    <p class="contact-value">nicolon@nicosand.com</p>
+                    <h3 class="contact-title">LINE</h3>
+                    <p class="contact-value">@485etec</p>
                 </a>
 
                 <a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener" class="contact-card animate-card" style="--delay: 1;">
@@ -198,7 +271,7 @@
                     <div class="footer-nav-group">
                         <h4>Contact</h4>
                         <ul>
-                            <li><a href="mailto:nicolon@nicosand.com">メール</a></li>
+                            <li><a href="../contact/">お問い合わせフォーム</a></li>
                             <li><a href="https://lin.ee/IT7L1Jd" target="_blank" rel="noopener">LINE</a></li>
                             <li><a href="https://www.instagram.com/nicolon_sandart/" target="_blank" rel="noopener">Instagram</a></li>
                         </ul>
