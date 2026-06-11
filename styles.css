@@ -2032,7 +2032,7 @@ button {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 1fr 2fr auto;
+    grid-template-columns: 1fr auto auto;
     gap: var(--space-2xl);
     margin-bottom: var(--space-xl);
 }
@@ -2054,7 +2054,7 @@ button {
 
 .footer-nav {
     display: flex;
-    gap: var(--space-2xl);
+    gap: var(--space-xl);
 }
 
 .footer-nav-group h4 {
@@ -2062,6 +2062,7 @@ button {
     font-weight: 600;
     margin-bottom: var(--space-md);
     color: rgba(255, 255, 255, 0.9);
+    white-space: nowrap;
 }
 
 .footer-nav-group ul {
@@ -2074,6 +2075,7 @@ button {
     font-size: 0.8125rem;
     color: rgba(255, 255, 255, 0.6);
     transition: var(--transition-fast);
+    white-space: nowrap;
 }
 
 .footer-nav-group a:hover {
