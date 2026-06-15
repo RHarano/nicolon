@@ -74,7 +74,15 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog Articles - Newest (2026-06-11) -->
+  <!-- Blog Articles - Newest (2026-06-16) -->
+  <url>
+    <loc>https://nicosand.com/blog/online-sandart-oyako/</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Articles (2026-06-11) -->
   <url>
     <loc>https://nicosand.com/blog/gel-candle-sand-itoshima/</loc>
     <lastmod>2026-06-11</lastmod>
