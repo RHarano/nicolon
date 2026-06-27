@@ -74,7 +74,15 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog Articles - Newest (2026-06-21) -->
+  <!-- Blog Articles - Newest (2026-06-22) -->
+  <url>
+    <loc>https://nicosand.com/blog/clip-sand-art/</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Articles (2026-06-21) -->
   <url>
     <loc>https://nicosand.com/blog/zenkoku-shucchou-workshop/</loc>
     <lastmod>2026-06-21</lastmod>
