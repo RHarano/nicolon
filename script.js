@@ -728,10 +728,42 @@ function initBlogSlider() {
     }, true);
 
     // お問い合わせフォーム送信
+    // Ajaxで送信し、必ず自サイトの完了ページへ遷移させる
+    // （外部サービスの英語ページを利用者に見せない）
     var form = document.querySelector('form[action*="formsubmit.co"]');
     if (form) {
-        form.addEventListener('submit', function () {
+        var THANKS_URL = '/contact/thanks/';
+        form.addEventListener('submit', function (e) {
             send('contact_submit', { page_path: location.pathname });
+
+            if (!window.fetch || !window.FormData) return; // 非対応ブラウザは通常送信
+
+            e.preventDefault();
+            var btn = form.querySelector('[type="submit"]');
+            var label = btn ? btn.querySelector('span') : null;
+            var original = label ? label.textContent : '';
+            if (btn) btn.disabled = true;
+            if (label) label.textContent = '送信中...';
+
+            var endpoint = form.getAttribute('action').replace(
+                'formsubmit.co/', 'formsubmit.co/ajax/'
+            );
+
+            fetch(endpoint, {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: new FormData(form)
+            }).then(function (res) {
+                if (!res.ok) throw new Error('bad status');
+                return res.json();
+            }).then(function () {
+                window.location.href = THANKS_URL;
+            }).catch(function () {
+                // 失敗時は通常のPOSTにフォールバック
+                if (btn) btn.disabled = false;
+                if (label) label.textContent = original;
+                form.submit();
+            });
         });
     }
 
