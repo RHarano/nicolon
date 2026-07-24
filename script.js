@@ -670,3 +670,73 @@ function initBlogSlider() {
     });
 }
 
+
+// ============================================
+// コンバージョン計測（GA4イベント送信）
+// LINE相談・お問い合わせ・Instagramのクリックを計測
+// ============================================
+(function () {
+    'use strict';
+
+    function send(name, params) {
+        if (typeof gtag === 'function') {
+            gtag('event', name, params || {});
+        }
+    }
+
+    // ページ内での位置（どのCTAが押されたか判別用）
+    function ctaLocation(el) {
+        if (el.closest('.blog-cta-box')) return 'blog_cta';
+        if (el.closest('.mobile-bottom-nav')) return 'mobile_nav';
+        if (el.closest('.footer')) return 'footer';
+        if (el.closest('.header')) return 'header';
+        if (el.closest('.instructor-social')) return 'profile';
+        return 'body';
+    }
+
+    document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href]');
+        if (!a) return;
+        var href = a.getAttribute('href') || '';
+
+        // LINE相談（最重要CV）
+        if (href.indexOf('lin.ee') !== -1 || href.indexOf('line.me') !== -1) {
+            send('line_click', {
+                link_url: href,
+                cta_location: ctaLocation(a),
+                page_path: location.pathname
+            });
+            return;
+        }
+
+        // Instagram
+        if (href.indexOf('instagram.com') !== -1) {
+            send('instagram_click', {
+                cta_location: ctaLocation(a),
+                page_path: location.pathname
+            });
+            return;
+        }
+
+        // お問い合わせページへの遷移
+        if (/\/contact\/?$/.test(href) || href.indexOf('#contact') !== -1) {
+            send('contact_click', {
+                cta_location: ctaLocation(a),
+                page_path: location.pathname
+            });
+        }
+    }, true);
+
+    // お問い合わせフォーム送信
+    var form = document.querySelector('form[action*="formsubmit.co"]');
+    if (form) {
+        form.addEventListener('submit', function () {
+            send('contact_submit', { page_path: location.pathname });
+        });
+    }
+
+    // お問い合わせ完了ページ（サンクスページ到達＝確定CV）
+    if (/\/contact\/thanks\/?/.test(location.pathname)) {
+        send('contact_complete', { page_path: location.pathname });
+    }
+})();
