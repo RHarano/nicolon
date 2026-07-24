@@ -48,6 +48,45 @@
         ]
     }
     </script>
+
+    <!-- 構造化データ - Service -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "カラーサンドアート出張ワークショップ",
+        "description": "福岡・博多を拠点に全国47都道府県へ出張するカラーサンドアートのワークショップ。企業イベント・住宅展示場・商業施設・福祉施設・学校行事に対応。準備・片付けはすべて講師が担当します。",
+        "serviceType": "出張ワークショップ",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "サンドアート販売&体験 Nicolon",
+            "url": "https://nicosand.com",
+            "image": "https://nicosand.com/img/IMG_3622.webp",
+            "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "福岡県",
+                "addressCountry": "JP"
+            },
+            "priceRange": "¥2,000〜"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "日本"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "2000",
+            "priceCurrency": "JPY",
+            "url": "https://nicosand.com/workshop/",
+            "availability": "https://schema.org/InStock"
+        },
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "企業・団体・施設・学校"
+        }
+    }
+    </script>
+
     <link rel="canonical" href="https://nicosand.com/workshop/">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 
@@ -256,9 +295,10 @@
                         <h4>Menu</h4>
                         <ul>
                             <li><a href="../">HOME</a></li>
-                            <li><a href="/#about">ABOUT</a></li>
-                            <li><a href="/#workshop">WORKSHOP</a></li>
-                            <li><a href="/#course">COURSE</a></li>
+                            <li><a href="/about/">ABOUT</a></li>
+                            <li><a href="/workshop/">WORKSHOP</a></li>
+                            <li><a href="/course/">COURSE</a></li>
+                            <li><a href="/gallery/">GALLERY</a></li>
                         </ul>
                     </div>
                     <div class="footer-nav-group">
