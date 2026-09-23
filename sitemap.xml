@@ -74,7 +74,14 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog Articles - Newest (2026-07-25) -->
+  <!-- Blog Articles - Newest (2026-09-24) -->
+  <url>
+    <loc>https://nicosand.com/blog/kigyo-event-report-202609/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Blog Articles (2026-07-25) -->
   <url>
     <loc>https://nicosand.com/blog/sandart-tsukurikata-guide/</loc>
     <lastmod>2026-07-25</lastmod>
