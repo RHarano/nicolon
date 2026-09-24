@@ -76,6 +76,12 @@
 
   <!-- Blog Articles - Newest (2026-09-24) -->
   <url>
+    <loc>https://nicosand.com/blog/sandart-order-meire/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://nicosand.com/blog/kigyo-event-report-202609/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
