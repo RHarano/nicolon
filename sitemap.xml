@@ -74,7 +74,14 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog Articles - Newest (2026-09-24) -->
+  <!-- Blog Articles - Newest (2026-10-05) -->
+  <url>
+    <loc>https://nicosand.com/blog/isopro-kaigo-keisai/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Blog Articles (2026-09-24) -->
   <url>
     <loc>https://nicosand.com/blog/sandart-order-meire/</loc>
     <lastmod>2026-09-24</lastmod>
