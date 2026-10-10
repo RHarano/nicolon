@@ -74,6 +74,55 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Articles (2026-10-10) 季節・エリア -->
+  <url>
+    <loc>https://nicosand.com/blog/halloween-sandart/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/christmas-sandart/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/valentine-sandart/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/tanabata-sandart/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sandart-saga/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sandart-kumamoto/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sandart-oita/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sandart-nagasaki/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Blog Articles - Newest (2026-10-10) 開催レポート -->
   <url>
     <loc>https://nicosand.com/blog/saga-patio-hahanohi-event/</loc>
