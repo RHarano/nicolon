@@ -56,3 +56,4 @@ Sitemap: https://nicosand.com/sitemap.xml
 
 # LLM向けサイト索引
 # llms.txt: https://nicosand.com/llms.txt
+# IndexNow: https://nicosand.com/fc9165d81faea96ca4acf4ffa270790a.txt
