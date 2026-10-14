@@ -74,6 +74,25 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Articles (2026-10-15) 企業B2B -->
+  <url>
+    <loc>https://nicosand.com/blog/tenjikai-novelty-sandart/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/jichitai-shotengai-event-sandart/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/daigaku-gakuensai-sandart/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Blog Articles (2026-10-15) 九州エリア追加 -->
   <url>
     <loc>https://nicosand.com/blog/sandart-miyazaki/</loc>
