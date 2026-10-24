@@ -74,6 +74,13 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Articles (2026-10-24) クリスマスサンド体験レポート -->
+  <url>
+    <loc>https://nicosand.com/blog/christmas-sand-report/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Blog Articles (2026-10-24) フラワーサンド -->
   <url>
     <loc>https://nicosand.com/blog/flower-sand-taiken/</loc>
