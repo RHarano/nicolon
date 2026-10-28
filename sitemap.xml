@@ -74,6 +74,37 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Articles (2026-10-28) 材料・購入 -->
+  <url>
+    <loc>https://nicosand.com/blog/color-sand-doko/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/daiso-sandart/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/seria-sandart/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sandart-youki-bin/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nicosand.com/blog/sandart-color-haishoku/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Blog Articles (2026-10-28) 糸島ローカル -->
   <url>
     <loc>https://nicosand.com/blog/sandart-itoshima/</loc>

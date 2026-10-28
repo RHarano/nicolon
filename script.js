@@ -772,3 +772,34 @@ function initBlogSlider() {
         send('contact_complete', { page_path: location.pathname });
     }
 })();
+
+/* ===== ブログ記事末の案内を出し分け（Part 9 / 法人・個人） ===== */
+(function () {
+    try {
+        var body = document.querySelector('.blog-post-body');
+        var related = document.querySelector('.blog-related');
+        if (!body || !related) return;
+        var catEl = document.querySelector('.blog-post-category');
+        var cat = catEl ? catEl.textContent.trim() : '';
+        var html = '';
+        if (/イベント/.test(cat) || cat === '企業研修' || cat === 'ワークショップ') {
+            html = '<h3>法人・団体のイベントご担当者さまへ</h3>'
+                + '<p>住宅展示場・商業施設・社内イベントで、サンドアート体験を開催しませんか？ 日程・人数が未定でもご相談いただけます。</p>'
+                + '<div class="post-lead-btns"><a class="pl-primary" href="../../contact/?type=corp">無料見積もり・空き状況の相談</a><a class="pl-outline" href="../../event/">法人イベントの詳細を見る</a></div>';
+        } else if (cat === 'レッスン' || cat === 'コース' || cat === '入門') {
+            html = '<h3>サンドアートを学んでみませんか？</h3>'
+                + '<p>趣味から講師デビューまで、あなたのペースで学べます。対面・オンラインに対応しています。</p>'
+                + '<div class="post-lead-btns"><a class="pl-primary" href="../../course/">講座・コースを見る</a><a class="pl-outline" href="../../online/">オンライン体験を見る</a></div>';
+        } else if (/オーダー/.test(cat) || cat === 'ギフト' || cat === 'ウェディング') {
+            html = '<h3>世界にひとつの贈り物を</h3>'
+                + '<p>名入れ・記念品など、オーダーメイドのサンドアートを承っています。</p>'
+                + '<div class="post-lead-btns"><a class="pl-primary" href="../../order/">オーダーメイドを見る</a><a class="pl-outline" href="../../contact/">相談する</a></div>';
+        } else {
+            return; // サンドアート・子育て等には一律では表示しない
+        }
+        var box = document.createElement('div');
+        box.className = 'post-lead-box';
+        box.innerHTML = html;
+        related.parentNode.insertBefore(box, related);
+    } catch (e) {}
+})();

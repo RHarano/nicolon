@@ -114,6 +114,193 @@ body.loading {
     display: none !important;
 }
 
+/* 数字と単位など、分断したくない語句用 */
+.nowrap {
+    white-space: nowrap;
+}
+
+/* ヒーローの補足情報リスト（法人向けファーストビュー） */
+.hero-points {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+}
+.hero-points li {
+    position: relative;
+    padding-left: 1.6rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.hero-points li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ffd36b;
+    font-weight: 700;
+}
+.hero-personal-link {
+    margin-top: 1.1rem;
+    font-size: 0.95rem;
+}
+.hero-personal-link a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    opacity: 0.92;
+}
+.hero-personal-link a:hover { opacity: 1; }
+@media (max-width: 600px) {
+    .hero-points { gap: 0.4rem 1.1rem; margin: 1rem 0 1.4rem; }
+    .hero-points li { font-size: 0.92rem; padding-left: 1.4rem; }
+}
+
+/* 開催事例セクション */
+.cases { background: #fbf6f0; }
+.cases-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1080px;
+    margin: 2.5rem auto 0;
+}
+.cases-grid .case-card {
+    flex: 0 1 330px;
+    max-width: 330px;
+    min-width: 0;
+}
+.case-card {
+    background: #fff;
+    border: 1px solid #efe3d7;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+}
+.case-card-img { height: 210px; background: #f2ece4; overflow: hidden; }
+.case-card-img img { width: 100%; height: 210px !important; object-fit: cover; display: block; }
+@media (max-width: 600px) { .case-card-img, .case-card-img img { height: 190px !important; } }
+.case-card-body { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; }
+.case-badge {
+    align-self: flex-start;
+    background: #e68aa0;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 3px 12px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
+.case-card-title { font-size: 1.05rem; font-weight: 700; line-height: 1.5; margin: 0 0 12px; }
+.case-meta { list-style: none; padding: 0; margin: 0 0 16px; font-size: 0.9rem; line-height: 1.75; }
+.case-meta li { display: flex; gap: 8px; }
+.case-meta .k { color: #9a8f84; white-space: nowrap; min-width: 4.2em; }
+.case-card .case-link {
+    margin-top: auto;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #d16a86;
+}
+.case-card .case-link:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+    .cases-grid { gap: 18px; }
+    .cases-grid .case-card { flex-basis: 100%; max-width: 420px; }
+}
+
+/* ===== ブログ共通：表示改善（Part 9） ===== */
+/* 長いURL・英数字が本文幅からはみ出さない */
+.blog-post-body a,
+.blog-post-body p,
+.blog-post-body li { overflow-wrap: anywhere; word-break: normal; }
+/* 横長の表はSPで表だけ横スクロール */
+.blog-post-body table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-collapse: collapse; }
+.blog-post-body table th, .blog-post-body table td { white-space: nowrap; }
+/* 縦写真がPCで大きくなりすぎないように */
+.blog-post-image img { max-height: 540px; object-fit: cover; }
+/* 埋め込み（iframe）を表示幅に対応 */
+.blog-post-body iframe { max-width: 100%; }
+/* 一覧カードのタイトルを2行でそろえる（並びが崩れにくい） */
+.blog-card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* 記事末の案内（法人／個人の出し分け・JSで挿入） */
+.post-lead-box {
+    margin: 2.5rem 0 1rem;
+    padding: 24px 22px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #fff4ec, #fdeef3);
+    border: 1px solid #f0d9c6;
+}
+.post-lead-box h3 { font-size: 1.1rem; margin: 0 0 8px; }
+.post-lead-box p { font-size: 0.95rem; line-height: 1.8; margin: 0 0 16px; color: #5c544d; }
+.post-lead-box .post-lead-btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.post-lead-box .post-lead-btns a {
+    display: inline-block; padding: 11px 18px; border-radius: 999px;
+    font-size: 0.92rem; font-weight: 700; text-decoration: none;
+}
+.post-lead-box .pl-primary { background: #e68aa0; color: #fff; }
+.post-lead-box .pl-outline { background: #fff; color: #d16a86; border: 1px solid #e9b6c4; }
+@media (max-width: 600px) {
+    .post-lead-box .post-lead-btns a { flex: 1 1 100%; text-align: center; }
+}
+
+/* ヘッダー「企業様向け」の視認性アップ */
+.nav-link.nav-biz {
+    background: #fff0e6;
+    border-radius: 10px;
+}
+.nav-link.nav-biz .nav-en,
+.nav-link.nav-biz .nav-ja { color: #e0795f; font-weight: 700; }
+.nav-link.nav-biz:hover { background: #ffe3d2; }
+
+/* SP下部固定CTA（無料見積もり / LINE相談） */
+.sp-cta-bar { display: none; }
+@media (max-width: 768px) {
+    .sp-cta-bar {
+        display: flex;
+        position: fixed;
+        left: 0; right: 0; bottom: 0;
+        z-index: 900;
+        gap: 8px;
+        padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px));
+        background: rgba(255, 255, 255, 0.96);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08);
+    }
+    .sp-cta-bar a {
+        flex: 1;
+        text-align: center;
+        padding: 13px 8px;
+        border-radius: 999px;
+        font-size: 0.92rem;
+        font-weight: 700;
+        text-decoration: none;
+        line-height: 1.2;
+    }
+    .sp-cta-bar .estimate { background: #e68aa0; color: #fff; }
+    .sp-cta-bar .line { background: #06c755; color: #fff; }
+    /* 固定バーで本文・フッターが隠れないよう余白を確保 */
+    body { padding-bottom: calc(66px + env(safe-area-inset-bottom, 0px)); }
+    /* ページトップ戻るボタンを固定バーの上へ */
+    .back-to-top { bottom: calc(80px + env(safe-area-inset-bottom, 0px)) !important; }
+}
+
+/* 見出しは意味のまとまりで折り返す（単語途中・末尾1〜2文字残りを防ぐ） */
+.hero-title,
+.section-title,
+.contact-title {
+    text-wrap: balance;
+}
+
 /* PC専用表示クラス - デフォルトでは何もしない（自然な表示） */
 
 img {
