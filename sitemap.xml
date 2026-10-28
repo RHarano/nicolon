@@ -74,6 +74,13 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Articles (2026-10-28) 糸島ローカル -->
+  <url>
+    <loc>https://nicosand.com/blog/sandart-itoshima/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <!-- Blog Articles (2026-10-24) クリスマスサンド体験レポート -->
   <url>
     <loc>https://nicosand.com/blog/christmas-sand-report/</loc>
