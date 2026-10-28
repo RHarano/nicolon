@@ -781,25 +781,40 @@ function initBlogSlider() {
         if (!body || !related) return;
         var catEl = document.querySelector('.blog-post-category');
         var cat = catEl ? catEl.textContent.trim() : '';
-        var html = '';
-        if (/イベント/.test(cat) || cat === '企業研修' || cat === 'ワークショップ') {
-            html = '<h3>法人・団体のイベントご担当者さまへ</h3>'
-                + '<p>住宅展示場・商業施設・社内イベントで、サンドアート体験を開催しませんか？ 日程・人数が未定でもご相談いただけます。</p>'
-                + '<div class="post-lead-btns"><a class="pl-primary" href="../../contact/?type=corp">無料見積もり・空き状況の相談</a><a class="pl-outline" href="../../event/">法人イベントの詳細を見る</a></div>';
-        } else if (cat === 'レッスン' || cat === 'コース' || cat === '入門') {
-            html = '<h3>サンドアートを学んでみませんか？</h3>'
+        var isCorp = /イベント/.test(cat) || cat === '企業研修' || cat === 'ワークショップ';
+        var isLesson = cat === 'レッスン' || cat === 'コース' || cat === '入門';
+        var isOrder = /オーダー/.test(cat) || cat === 'ギフト' || cat === 'ウェディング';
+        if (!isCorp && !isLesson && !isOrder) return; // サンドアート・子育て等には一律では表示しない
+
+        function makeBox(cls, html) { var d = document.createElement('div'); d.className = cls; d.innerHTML = html; return d; }
+
+        if (isCorp) {
+            // 重複防止：生成時のCTAボックスは非表示にし、末尾CTAへ統一
+            var oldCta = body.querySelector('.blog-cta-box');
+            if (oldCta) oldCta.style.display = 'none';
+            // 記事途中：概要・体験説明のあと（2つ目のh2の前）に1か所だけ
+            var h2s = body.querySelectorAll('h2');
+            if (h2s.length >= 3 && h2s[1]) {
+                var mid = makeBox('post-lead-box mid',
+                    '<p>住宅展示場・商業施設・社内イベントでの開催をご検討中ですか？ 日程・人数が未定でもご相談いただけます。</p>'
+                    + '<div class="post-lead-btns"><a class="pl-outline" href="../../event/">法人イベントの詳細を見る</a></div>');
+                h2s[1].parentNode.insertBefore(mid, h2s[1]);
+            }
+            // 記事末尾：まとめの後・関連記事の前
+            related.parentNode.insertBefore(makeBox('post-lead-box',
+                '<h3>法人・団体のイベントご担当者さまへ</h3>'
+                + '<p>準備・進行・片付けまで講師が対応します。まずは無料見積もり・空き状況をご相談ください。</p>'
+                + '<div class="post-lead-btns"><a class="pl-primary" href="../../contact/?type=corp">無料見積もり・空き状況の相談</a><a class="pl-outline" href="../../event/">法人イベントの詳細を見る</a></div>'), related);
+        } else if (isLesson) {
+            related.parentNode.insertBefore(makeBox('post-lead-box',
+                '<h3>サンドアートを学んでみませんか？</h3>'
                 + '<p>趣味から講師デビューまで、あなたのペースで学べます。対面・オンラインに対応しています。</p>'
-                + '<div class="post-lead-btns"><a class="pl-primary" href="../../course/">講座・コースを見る</a><a class="pl-outline" href="../../online/">オンライン体験を見る</a></div>';
-        } else if (/オーダー/.test(cat) || cat === 'ギフト' || cat === 'ウェディング') {
-            html = '<h3>世界にひとつの贈り物を</h3>'
+                + '<div class="post-lead-btns"><a class="pl-primary" href="../../course/">講座・コースを見る</a><a class="pl-outline" href="../../online/">オンライン体験を見る</a></div>'), related);
+        } else if (isOrder) {
+            related.parentNode.insertBefore(makeBox('post-lead-box',
+                '<h3>世界にひとつの贈り物を</h3>'
                 + '<p>名入れ・記念品など、オーダーメイドのサンドアートを承っています。</p>'
-                + '<div class="post-lead-btns"><a class="pl-primary" href="../../order/">オーダーメイドを見る</a><a class="pl-outline" href="../../contact/">相談する</a></div>';
-        } else {
-            return; // サンドアート・子育て等には一律では表示しない
+                + '<div class="post-lead-btns"><a class="pl-primary" href="../../order/">オーダーメイドを見る</a><a class="pl-outline" href="../../contact/">相談する</a></div>'), related);
         }
-        var box = document.createElement('div');
-        box.className = 'post-lead-box';
-        box.innerHTML = html;
-        related.parentNode.insertBefore(box, related);
     } catch (e) {}
 })();

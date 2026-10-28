@@ -143,7 +143,7 @@
         <div class="container">
             <div class="section-header center">
                 <span class="section-badge">Contact Form</span>
-                <h2 class="section-title">お問い合わせフォーム</h2>
+                <h2 class="section-title" id="contact-form-heading">お問い合わせフォーム</h2>
                 <p class="section-description">
                     下記フォームに必要事項をご記入の上、送信してください。<br class="pc-only">24時間以内にご返信いたします。
                 </p>
@@ -392,6 +392,12 @@
                     }
                     var subj = document.querySelector('input[name="_subject"]');
                     if (subj) subj.value = '【nicolon公式サイト】企業・法人のイベント相談';
+                    // 法人導線：フォームを先に見せる（上部のLINE推奨セクションを非表示。LINEはフォーム下の「その他のご連絡方法」に残る）
+                    var lineRec = document.querySelector('.line-recommend-section');
+                    if (lineRec) lineRec.style.display = 'none';
+                    // 見出しを法人向けに
+                    var heading = document.getElementById('contact-form-heading');
+                    if (heading) heading.textContent = '法人イベントのご相談・無料見積もり';
                 }
             } catch (e) {}
         })();

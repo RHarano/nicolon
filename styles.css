@@ -248,6 +248,8 @@ body.loading {
 }
 .post-lead-box .pl-primary { background: #e68aa0; color: #fff; }
 .post-lead-box .pl-outline { background: #fff; color: #d16a86; border: 1px solid #e9b6c4; }
+.post-lead-box.mid { background: #fff; border: 1px dashed #e9b6c4; padding: 16px 18px; }
+.post-lead-box.mid p { margin: 0 0 10px; }
 @media (max-width: 600px) {
     .post-lead-box .post-lead-btns a { flex: 1 1 100%; text-align: center; }
 }
